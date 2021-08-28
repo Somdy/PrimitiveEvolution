@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Defect">
+        <SData branch = "56">
+            <name>Overcharged</name>
+            <description>Gain !B! Block. NL Gain [E] and draw 1 card at the start of next turn.</description>
+        </SData>
+        <SData branch = "57">
+            <name>Steady Battery</name>
+            <description>Innate. NL Gain !B! Block. NL Next turn, gain [E].</description>
+        </SData>
+        <SData branch = "65">
+            <name>Multiple Cast</name>
+            <description>Evoke your next Orb triple times. NL Exhaust.</description>
+        </SData>
+        <SData branch = "66">
+            <name>Overloaded Cast</name>
+            <description>Evoke your next Orb. NL Channel 1 relative prevolution:Overloaded Orb.</description>
+        </SData>
+        <SData branch = "67">
+            <name>Overloaded Lightning</name>
+            <description>Channel !M! prevolution:Overloaded Lightning.</description>
+        </SData>
+        <SData branch = "68">
+            <name>More Lightning</name>
+            <description>Channel !M! Lightning. NL Draw 1 Skill that costs 1.</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

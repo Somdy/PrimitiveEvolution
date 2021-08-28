@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Silent">
+        <SData branch = "11">
+            <name>毒粉</name>
+            <description>在你的回合结束时，给予所有敌人 !M! 层 中毒 。</description>
+        </SData>
+        <SData branch = "12">
+            <name>毒气</name>
+            <description>在你回合开始时，给予1名随机敌人 !M! 层 中毒 2次。</description>
+        </SData>
+        <SData branch = "13">
+            <name>毒烟</name>
+            <description>给予所有敌人 !M! 层 虚弱 。 NL 在你的回合开始时，给予所有敌人 !M! 层 中毒 。</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

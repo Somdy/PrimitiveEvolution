@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Defect">
+        <SData branch = "44">
+            <name>Machine Research</name>
+            <description>Except the turn-starting draw, you may draw !M! more cards whenever you draw in your turn.</description>
+        </SData>
+        <SData branch = "45">
+            <name>Doctor Machine</name>
+            <description>Innate. NL Draw !M! Skills. They cost 1 less this turn.</description>
+        </SData>
+        <SData branch = "46">
+            <name>Machine Inventor</name>
+            <description>Innate. NL Draw !M! Powers. They cost 1 less this turn.</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

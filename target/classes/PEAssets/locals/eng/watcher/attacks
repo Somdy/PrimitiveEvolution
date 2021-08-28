@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Watcher">
+        <SData branch = "61">
+            <name>Glare</name>
+            <description>Deal !D! damage. NL Enter Wrath. NL Exit Wrath at the end of this turn.</description>
+        </SData>
+        <SData branch = "62">
+            <name>Irate</name>
+            <description>Deal !D! damage. NL Enter Wrath. NL If already in Wrath, deal twice damage.</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

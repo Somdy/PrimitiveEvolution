@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Watcher">
+        <SData branch = "63">
+            <name>Alterness</name>
+            <description>Gain !B! Block. NL Enter Calm. NL If already in Calm, gain !M! more block.</description>
+        </SData>
+        <SData branch = "64">
+            <name>Guard</name>
+            <description>Gain !B! Block. NL Enter Calm. NL Draw an Attack and make it retain for a turn.</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

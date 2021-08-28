@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Silent">
+        <SData branch = "11">
+            <name>Noxious Dust</name>
+            <description>At the end of your turn, apply !M! poison to ALL enemies.</description>
+        </SData>
+        <SData branch = "12">
+            <name>Noxious Gas</name>
+            <description>At the start of your turn, apply !M! poison to a random enemy twice.</description>
+        </SData>
+        <SData branch = "13">
+            <name>Noxious Smoke</name>
+            <description>Apply !M! Weak to ALL enemies. NL At the start of your turn, apply !M! poison to ALL enemies.</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

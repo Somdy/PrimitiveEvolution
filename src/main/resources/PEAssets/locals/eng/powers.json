@@ -1,0 +1,73 @@
+{
+    "prevolution:EvolutionPower": {
+        "NAME": "Power",
+        "DESCRIPTIONS": [
+            "You",
+            ""
+        ]
+    },
+
+    "prevolution:NoxiousDust": {
+        "NAME": "Noxious Dust",
+        "DESCRIPTIONS": [
+            "At the end of the turn of [owner_name] , apply #b[amt_0] #yPoison to ALL enemies.",
+            ""
+        ]
+    },
+
+    "prevolution:NoxiousGas": {
+        "NAME": "Noxious Gas",
+        "DESCRIPTIONS": [
+            "At the start of the turn of [owner_name] , apply #b[amt_0] #yPoison to a random enemy #b[amt_1] times.",
+            ""
+        ]
+    },
+
+    "prevolution:Bruise": {
+        "NAME": "Bruise",
+        "DESCRIPTIONS": [
+            "[owner_name] will take #b[amt_0] attack damage. At the end of turn, this is reduced by #b[amt_1] .",
+            ""
+        ]
+    },
+
+    "prevolution:Bleeding": {
+        "NAME": "Bleeding",
+        "DESCRIPTIONS": [
+            "Whenever [owner_name] attacked，lose #b[amt_0] health and reduce this by #b[amt_1] .",
+            ""
+        ]
+    },
+
+    "prevolution:MachineResearch": {
+        "NAME": "Machine Research",
+        "DESCRIPTIONS": [
+            "Whenever you draw in your turn, draw #b[amt_0] more cards except at the turn start.",
+            ""
+        ]
+    },
+
+    "prevolution:Irritability": {
+        "NAME": "Irritability",
+        "DESCRIPTIONS": [
+            "Whenver you play an Attack this turn, draw #b[amt_0] Attacks.",
+            ""
+        ]
+    },
+
+    "prevolution:Fury": {
+        "NAME": "Fury",
+        "DESCRIPTIONS": [
+            "Whenever [owner_name] attacks this turn, gain #b[amt_0] #yblock .",
+            ""
+        ]
+    },
+
+    "prevolution:ExitStanceEndTurn": {
+        "NAME": "Mind",
+        "DESCRIPTIONS": [
+            "At the end of this turn, exit #y[crt_0] .",
+            ""
+        ]
+    }
+}

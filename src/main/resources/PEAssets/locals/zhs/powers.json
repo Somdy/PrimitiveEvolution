@@ -1,0 +1,73 @@
+{
+    "prevolution:EvolutionPower": {
+        "NAME": "能力",
+        "DESCRIPTIONS": [
+            "你",
+            ""
+        ]
+    },
+
+    "prevolution:NoxiousDust": {
+        "NAME": "毒粉",
+        "DESCRIPTIONS": [
+            "[owner_name] 的回合结束时，给予所有敌人 #b[amt_0] 层 #y中毒 。",
+            ""
+        ]
+    },
+
+    "prevolution:NoxiousGas": {
+        "NAME": "毒气",
+        "DESCRIPTIONS": [
+            "[owner_name] 的回合开始时，给予 #b1 名随机敌人 #b[amt_0] 层 #y中毒 #b[amt_1] 次。",
+            ""
+        ]
+    },
+
+    "prevolution:Bruise": {
+        "NAME": "瘀伤",
+        "DESCRIPTIONS": [
+            "[owner_name] 额外受到 #b[amt_0] 点攻击伤害。回合结束时，瘀伤减少 #b[amt_1] 层。",
+            ""
+        ]
+    },
+
+    "prevolution:Bleeding": {
+        "NAME": "出血",
+        "DESCRIPTIONS": [
+            "[owner_name] 受到攻击时，失去 #b[amt_0] 点生命值，同时出血减少 #b[amt_1] 层。",
+            ""
+        ]
+    },
+
+    "prevolution:MachineResearch": {
+        "NAME": "机器研究",
+        "DESCRIPTIONS": [
+            "[owner_name] 在 [owner_name] 的回合抽牌时，除回合开始抽牌外，每次额外抽 #b[amt_0] 张牌。",
+            ""
+        ]
+    },
+
+    "prevolution:Irritability": {
+        "NAME": "暴躁",
+        "DESCRIPTIONS": [
+            "本回合你每打出 #b1 张攻击牌，抽 #b[amt_0] 张攻击牌。",
+            ""
+        ]
+    },
+
+    "prevolution:Fury": {
+        "NAME": "暴怒",
+        "DESCRIPTIONS": [
+            "本回合每当 [owner_name] 攻击时，获得 #b[amt_0] 点 #y格挡 。",
+            ""
+        ]
+    },
+
+    "prevolution:ExitStanceEndTurn": {
+        "NAME": "理性",
+        "DESCRIPTIONS": [
+            "当前回合结束时，退出 #y[crt_0] 。",
+            ""
+        ]
+    }
+}

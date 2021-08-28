@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Ironclad">
+        <SData branch = "31">
+            <name>Smite</name>
+            <description>Deal !D! damage. NL Apply !M! prevolution:Bruise .</description>
+        </SData>
+        <SData branch = "32">
+            <name>Whack</name>
+            <description>Deal !D! damage. NL Gain !M! Strength.</description>
+        </SData>
+        <SData branch = "33">
+            <name>Blast Wave</name>
+            <description>Gain !B! Block. NL Deal !D! damage. NL Apply !M! Weak.</description>
+        </SData>
+        <SData branch = "34">
+            <name>Iron Smash</name>
+            <description>Deal !D! damage. NL If the target has block, deal more damage equal to its block.</description>
+        </SData>
+        <SData branch = "35">
+            <name>Lethal Cleave</name>
+            <description>Deal !D! damage to ALL enemies. NL If the target is lmkmod:Unblocked, apply !M! prevolution:Bruise .</description>
+        </SData>
+        <SData branch = "36">
+            <name>Breaking Cleave</name>
+            <description>Deal !D! damage to ALL enemies. NL Draw !M! Attacks whose damage is lesser than this.</description>
+        </SData>
+        <SData branch = "37">
+            <name>Restless Strike</name>
+            <description>Deal !D! damage. NL If not Fatal, gain !M! Vulnerable.</description>
+        </SData>
+        <SData branch = "38">
+            <name>Free Strike</name>
+            <description>Deal !D! damage. NL Shuffle 2 *Wounds into discard pile if played when energy is not enought.</description>
+        </SData>
+        <SData branch = "39">
+            <name>Violence</name>
+            <description>Deal !D! damage. NL Increase this card's damage by !M! this combat. NL If the target's health is below 3/4, increase 6 more damage.</description>
+        </SData>
+        <SData branch = "40">
+            <name>Rampaging</name>
+            <description>Deal !D! damage. NL Increase this card's damage by !M! this combat. NL Draw 1 other Attack that costs 1.</description>
+        </SData>
+        <SData branch = "41">
+            <name>Thumps</name>
+            <description>Deal !D! damage !D! times. NL (Affected by damage modifier powers)</description>
+        </SData>
+        <SData branch = "54">
+            <name>Rational Anger</name>
+            <description>Deal !D! damage. NL Shuffle a copy of this card into draw pile. NL Exhaust.</description>
+        </SData>
+        <SData branch = "55">
+            <name>Awfully Angry</name>
+            <description>Deal !D! damage. NL Apply !M! prevolution:Bruise . NL Shuffle a copy whose damage is increased by !M! of this card into discard pile.</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Ironclad">
+        <SData branch = "31">
+            <name>重击</name>
+            <description>造成 !D! 点伤害。 NL 给予 !M! 层 prevolution:瘀伤 。</description>
+        </SData>
+        <SData branch = "32">
+            <name>猛击</name>
+            <description>造成 !D! 点伤害。 NL 获得 !M! 点 力量 。</description>
+        </SData>
+        <SData branch = "33">
+            <name>冲击波</name>
+            <description>获得 !B! 点 格挡 。 NL 造成 !D! 点伤害。 NL 给予 !M! 层 虚弱 。</description>
+        </SData>
+        <SData branch = "34">
+            <name>铁斩重击</name>
+            <description>造成 !D! 点伤害。 NL 如果目标有 格挡 ，额外造成等同于其 格挡 的伤害。</description>
+        </SData>
+        <SData branch = "35">
+            <name>致伤劈</name>
+            <description>对所有敌人造成 !D! 点伤害。 NL lmkmod:突破 目标时，给予其 !M! 层 prevolution:瘀伤 。</description>
+        </SData>
+        <SData branch = "36">
+            <name>破浪劈</name>
+            <description>对所有敌人造成 !D! 点伤害。 NL 抽 !M! 张伤害低于该牌的攻击牌。</description>
+        </SData>
+        <SData branch = "37">
+            <name>无畏打击</name>
+            <description>造成 !D! 点伤害。 NL 未 斩杀 时，获得 !M! 层 易伤 。</description>
+        </SData>
+        <SData branch = "38">
+            <name>自由打击</name>
+            <description>造成 !D! 点伤害。 NL 能量不足时，仍可打出但会将2张 *伤口 洗入弃牌堆。</description>
+        </SData>
+        <SData branch = "39">
+            <name>暴打</name>
+            <description>造成 !D! 点伤害。 NL 该牌在本场战斗中伤害增加 !M! 。如果目标生命值低于3/4，打出后额外增加6点伤害。</description>
+        </SData>
+        <SData branch = "40">
+            <name>无冕狂暴</name>
+            <description>造成 !D! 点伤害。 NL 该牌在本场战斗中伤害增加 !M! 。抽1张耗能为1的其他攻击牌。</description>
+        </SData>
+        <SData branch = "41">
+            <name>狂揍</name>
+            <description>造成 !D! 点伤害 !D! 次。 NL （受伤害能力加成）</description>
+        </SData>
+        <SData branch = "54">
+            <name>理性愤怒</name>
+            <description>造成 !D! 点伤害。 NL 将该牌的一张复制洗入抽牌堆。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "55">
+            <name>极度愤怒</name>
+            <description>造成 !D! 点伤害。 NL 给予 !M! 层 prevolution:瘀伤 。 NL 将该牌伤害增加 !M! 点的复制1张洗入弃牌堆。</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

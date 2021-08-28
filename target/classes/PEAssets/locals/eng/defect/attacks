@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Defect">
+        <SData branch = "58">
+            <name>Relative Contact</name>
+            <description>Deal !D! damage. If you have played less than !M! cards this turn, play 2 random cards in draw pile.</description>
+        </SData>
+        <SData branch = "59">
+            <name>Break The Reality</name>
+            <description>Deal !D! damage. If you have played less than !M! cards this turn, choose 1 of 5 of any color cards and add it to hand.</description>
+        </SData>
+        <SData branch = "60">
+            <name>Back To Back</name>
+            <description>Deal !D! damage. If you have played less than !M! cards this turn, choose 2 of all cards drawn last turn and add them to hand with Exhaust .</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

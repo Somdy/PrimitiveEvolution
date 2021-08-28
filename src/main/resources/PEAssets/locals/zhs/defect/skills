@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Defect">
+        <SData branch = "56">
+            <name>电量溢出</name>
+            <description>获得 !B! 点 格挡 。 NL 在下一回合开始时获得 [E] 并抽1张牌。</description>
+        </SData>
+        <SData branch = "57">
+            <name>固态电池</name>
+            <description>固有 。 NL 获得 !B! 点 格挡 。 NL 在下一回合获得 [B] 。</description>
+        </SData>
+        <SData branch = "65">
+            <name>多重释放</name>
+            <description>激发 你最右侧的充能球3次。</description>
+        </SData>
+        <SData branch = "66">
+            <name>多态激发</name>
+            <description>激发 你最右侧的充能球次。 NL 生成1个对应的 prevolution:超载 充能球。</description>
+        </SData>
+        <SData branch = "67">
+            <name>溢电</name>
+            <description>生成 !M! prevolution:超载 闪电 。</description>
+        </SData>
+        <SData branch = "68">
+            <name>引电</name>
+            <description>生成 !M! 个 闪电 充能球。 NL 抽1张耗能为1的技能牌。</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>
