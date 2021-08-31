@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Defect">
+        <SData branch = "44">
+            <name>機器研究</name>
+            <description>在你的回合內，除回合開始抽牌外，每次抽牌時，額外抽 !M! 張牌。</description>
+        </SData>
+        <SData branch = "45">
+            <name>機器博士</name>
+            <description>固有 NL 抽 !M! 張技能牌，這些牌本回合耗能减少1點。</description>
+        </SData>
+        <SData branch = "46">
+            <name>機器發明</name>
+            <description>固有 NL 抽 !M! 張能力牌，這些牌本回合耗能减少1點並獲得 虛無 。</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

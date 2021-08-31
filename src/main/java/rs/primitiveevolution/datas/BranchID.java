@@ -69,4 +69,14 @@ public final class BranchID {
     public static final int OverloadedCast = 66;
     public static final int LightningOverloaded = 67;
     public static final int LightningComes = 68;
+    public static final int MarkBeam = 69;
+    public static final int SweepingLaser = 70;
+    public static final int Superload = 71;
+    public static final int Overfusion = 72;
+    public static final int SuperFusion = 73;
+    public static final int Annihilate = 74;
+    public static final int Catastrophe = 75;
+    public static final int RandomSignals = 76;
+    public static final int LimitedBandwidth = 77;
+    public static final int Imply = 78;
 }

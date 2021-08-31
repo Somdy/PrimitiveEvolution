@@ -17,5 +17,37 @@
             <name>Overloaded Cast</name>
             <description>Evoke your next Orb. NL Channel 1 relative prevolution:Overloaded Orb.</description>
         </SData>
+        <SData branch = "67">
+            <name>Overloaded Lightning</name>
+            <description>Channel !M! prevolution:Overloaded Lightning.</description>
+        </SData>
+        <SData branch = "68">
+            <name>More Lightning</name>
+            <description>Channel !M! Lightning. NL Draw 1 Skill that costs 1.</description>
+        </SData>
+        <SData branch = "71">
+            <name>Superload</name>
+            <description> Channel !M! random prevolution:Overloaded Orbs.</description>
+        </SData>
+        <SData branch = "72">
+            <name>Overfusion</name>
+            <description>Channel !M! Plasma. Draw 2 Skills.</description>
+        </SData>
+        <SData branch = "73">
+            <name>Super Fusion</name>
+            <description>Gain 1 Focus !M! turns for each unique Orb you have.</description>
+        </SData>
+        <SData branch = "76">
+            <name>Random Signals</name>
+            <description>Choose 1 of 3 random Powers and add it to your hand. NL Exhaust.</description>
+        </SData>
+        <SData branch = "77">
+            <name>Limited Bandwidth</name>
+            <description>Choose 1 from an Attack, Skill and Power and add it to your hand. It costs 1 less this turn. NL Exhaust.</description>
+        </SData>
+        <SData branch = "78">
+            <name>Imply</name>
+            <description>Innate. NL Add a random Power to your hand. NL It costs 0 this turn. NL Exhaust.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

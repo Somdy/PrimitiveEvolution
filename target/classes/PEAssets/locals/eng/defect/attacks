@@ -13,5 +13,13 @@
             <name>Back To Back</name>
             <description>Deal !D! damage. If you have played less than !M! cards this turn, choose 2 of all cards drawn last turn and add them to hand with Exhaust .</description>
         </SData>
+        <SData branch = "69">
+            <name>Mark Beam</name>
+            <description>Deal !D! damage to ALL enemies. NL Apply !M! Lock-On to each *unblocked enemy.</description>
+        </SData>
+        <SData branch = "70">
+            <name>Sweeping Laser</name>
+            <description>Deal !D! damage to ALL enemies. NL Draw !M! Skills that cost 1.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

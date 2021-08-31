@@ -19,7 +19,7 @@
         </SData>
         <SData branch = "35">
             <name>Lethal Cleave</name>
-            <description>Deal !D! damage to ALL enemies. NL If the target is lmkmod:Unblocked, apply !M! prevolution:Bruise .</description>
+            <description>Deal !D! damage to ALL enemies. NL If the target's *unblocked , apply !M! prevolution:Bruise .</description>
         </SData>
         <SData branch = "36">
             <name>Breaking Cleave</name>

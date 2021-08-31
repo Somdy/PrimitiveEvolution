@@ -27,7 +27,7 @@
         </SData>
         <SData branch = "20">
             <name>Toxic Darts</name>
-            <description>Deal !D! damage for each Skill in your hand. NL Whenever the target's lmkmod:Unblocked, apply poison of the same amount.</description>
+            <description>Deal !D! damage for each Skill in your hand. NL Whenever the target's *unblocked , apply poison of the same amount.</description>
         </SData>
         <SData branch = "21">
             <name>Throwing Darts</name>
@@ -43,7 +43,7 @@
         </SData>
         <SData branch = "24">
             <name>Spray with Shivs</name>
-            <description>Deal !D! damage to ALL enemies twice. NL Whenever a target's lmkmod:Unblocked, play a *Shiv at it.</description>
+            <description>Deal !D! damage to ALL enemies twice. NL Whenever a target's *unblocked , play a *Shiv at it.</description>
         </SData>
         <SData branch = "28">
             <name>Impale the Armor</name>
@@ -51,7 +51,7 @@
         </SData>
         <SData branch = "29">
             <name>Attack to Defend</name>
-            <description>Deal !D! damage X times. NL Whenever the target's lmkmod:Unblocked, gain block of the same amount.</description>
+            <description>Deal !D! damage X times. NL Whenever the target's *unblocked , gain block of the same amount.</description>
         </SData>
         <SData branch = "30">
             <name>Swift Combos</name>
@@ -63,7 +63,7 @@
         </SData>
         <SData branch = "43">
             <name>Incise</name>
-            <description>Deal !D! damage. NL Whenever the target's lmkmod:Unblocked, choose 1 card in hand and increase its ALL modifiable properties by the same amount.</description>
+            <description>Deal !D! damage. NL Whenever the target's *unblocked , choose 1 card in hand and increase its ALL modifiable properties by the same amount.</description>
         </SData>
     </BaseTextData>
 </LocalSets>

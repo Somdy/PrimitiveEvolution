@@ -35,6 +35,15 @@ public abstract class Evolution {
         TEXT = uiStrings.TEXT;
     }
     
+    public static String getPlayHandCardUI(boolean exhaust, int times) {
+        switch (Settings.language) {
+            case ZHS:
+                return TEXT[7] + (times > 1 ? (times + TEXT[9]) : "") + (exhaust ? TEXT[8] : "");
+            default:
+                return TEXT[7] + (times > 1 ? (times + TEXT[9]) : "") + (exhaust ? TEXT[8] : "");
+        }
+    }
+    
     public static String getGridToHandSelectUI(int opts, boolean anyNumber) {
         switch (Settings.language) {
             case ZHS:

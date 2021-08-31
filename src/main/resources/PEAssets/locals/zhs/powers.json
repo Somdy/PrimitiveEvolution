@@ -69,5 +69,13 @@
             "当前回合结束时，退出 #y[crt_0] 。",
             ""
         ]
+    },
+
+    "prevolution:Trance": {
+        "NAME": "恍惚",
+        "DESCRIPTIONS": [
+            "在 #b[amt_0] 个回合后，失去 #b[amt_1] 点 #y集中 。",
+            ""
+        ]
     }
 }

@@ -29,5 +29,13 @@
             <name>狂乱</name>
             <description>抽 !M! 张攻击牌。 NL 随机改变抽到牌本回合的耗能。</description>
         </SData>
+        <SData branch = "74">
+            <name>湮灭</name>
+            <description>打出并 消耗 1张耗能不大于2的手牌。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "75">
+            <name>浩劫</name>
+            <description>不能被打出 。 NL 抽到该牌时 将该牌 消耗 同时打出你抽牌堆和弃牌堆中各1张随机牌的复制。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

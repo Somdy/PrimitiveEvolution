@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Watcher">
+        <SData branch = "63">
+            <name>昼警</name>
+            <description>获得 !B! 点 格挡 。 NL 进入 平静 。 NL 若已处于 *平静 ，额外获得 !M! 点 格挡 。</description>
+        </SData>
+        <SData branch = "64">
+            <name>夕惕</name>
+            <description>获得 !B! 点 格挡 。 NL 进入 平静 。 NL 抽1张攻击牌并使其 保留 1回合。</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

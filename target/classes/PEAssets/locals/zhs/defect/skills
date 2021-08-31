@@ -7,15 +7,47 @@
         </SData>
         <SData branch = "57">
             <name>固态电池</name>
-            <description>固有 。 NL 获得 !B! 点 格挡 。 NL 在下一回合获得 [B] 。</description>
+            <description>固有 。 NL 获得 !B! 点 格挡 。 NL 在下一回合获得 [E] 。</description>
         </SData>
-        <SData branch = "9999">
+        <SData branch = "65">
             <name>多重释放</name>
-            <description>激发 你最右侧的充能球3次。</description>
+            <description>激发 你最右侧的充能球3次。 NL 消耗 。</description>
         </SData>
-        <SData branch = "9998">
+        <SData branch = "66">
             <name>多态激发</name>
-            <description>激发 你最右侧的充能球次。 NL 生成1个对应的 prevolution:超载 充能球。</description>
+            <description>激发 你最右侧的充能球。 NL 生成1个对应的 prevolution:超载 充能球。</description>
+        </SData>
+        <SData branch = "67">
+            <name>溢电</name>
+            <description>生成 !M! 个 prevolution:超载 闪电 。</description>
+        </SData>
+        <SData branch = "68">
+            <name>引电</name>
+            <description>生成 !M! 个 闪电 充能球。 NL 抽1张耗能为1的技能牌。</description>
+        </SData>
+        <SData branch = "71">
+            <name>超载</name>
+            <description>生成 !M! 个随机 prevolution:超载 充能球。</description>
+        </SData>
+        <SData branch = "72">
+            <name>激变</name>
+            <description>生成 !M! 个 等离子 充能球。 NL 抽2张技能牌。</description>
+        </SData>
+        <SData branch = "73">
+            <name>超聚变</name>
+            <description>你每有1种充能球，获得 !M! 回合的1点 集中 。</description>
+        </SData>
+        <SData branch = "76">
+            <name>随机信号</name>
+            <description>从3张随机能力牌中选择1张加入手牌。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "77">
+            <name>有限带宽</name>
+            <description>从技能牌、攻击牌和能力牌各1张中选择1张加入手牌。这张牌本回合耗能减少1点。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "78">
+            <name>暗示</name>
+            <description>固有 。 NL 将1张随机能力牌加入手牌。这张牌本回合耗能为0。 NL 消耗 。</description>
         </SData>
     </BaseTextData>
 </LocalSets>

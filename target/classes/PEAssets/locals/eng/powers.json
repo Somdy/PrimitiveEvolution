@@ -69,5 +69,13 @@
             "At the end of this turn, exit #y[crt_0] .",
             ""
         ]
+    },
+
+    "prevolution:Trance": {
+        "NAME": "Trance",
+        "DESCRIPTIONS": [
+            "Lose #b[amt_1] #yFocus in #b[amt_0] turns.",
+            ""
+        ]
     }
 }

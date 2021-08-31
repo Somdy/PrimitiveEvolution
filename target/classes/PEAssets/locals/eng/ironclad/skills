@@ -11,11 +11,11 @@
         </SData>
         <SData branch = "49">
             <name>Armed To Teeth</name>
-            <description>For each upgraded card in hand, gain !B! block. NL Upgrade ALL hand.</description>
+            <description>For each Upgraded card in hand, gain !B! Block. NL Upgrade ALL hand.</description>
         </SData>
         <SData branch = "50">
             <name>Arm At Arms</name>
-            <description>Retain. NL Upgrade 1 card in hand and gain block equal to the max property of its. Repeat this once.</description>
+            <description>Retain. NL Upgrade 1 card in hand and gain Block equal to the max property of its. Repeat this once.</description>
         </SData>
         <SData branch = "51">
             <name>Irritability</name>
@@ -28,6 +28,14 @@
         <SData branch = "53">
             <name>Frenzy</name>
             <description>Draw !M! Attacks and transform their costs randomly.</description>
+        </SData>
+        <SData branch = "74">
+            <name>Annihilate</name>
+            <description>Choose a card in hand that costs no more than 3. Play it and Exhaust it. NL Exhaust.</description>
+        </SData>
+        <SData branch = "75">
+            <name>Catastrophe</name>
+            <description>Unplayable. NL When drawn, exhaust this card and play a copy of a random card in your draw pile. Repeat this for a random card in discard pile.</description>
         </SData>
     </BaseTextData>
 </LocalSets>
