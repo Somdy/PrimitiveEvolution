@@ -16,6 +16,7 @@ import java.util.List;
 
 public abstract class Evolution {
     public static final String EVO_ZHS = "可进化";
+    public static final String EVO_ZHT = "可進化";
     public static final String EVO_ENG = "Evolvable";
     public static UIStrings uiStrings;
     public static String[] TEXT;
@@ -25,6 +26,8 @@ public abstract class Evolution {
         switch (lang) {
             case ZHS:
                 return EVO_ZHS;
+            case ZHT:
+                return EVO_ZHT;
             default:
                 return EVO_ENG;
         }

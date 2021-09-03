@@ -2,40 +2,40 @@
 <LocalSets>
     <BaseTextData ID = "Ironclad">
         <SData branch = "47">
-            <name>锻炼肌肉</name>
-            <description>获得1点 力量 。 NL 你打出的下1张攻击牌额外造成 !M! 点伤害。</description>
+            <name>鍛鍊肌肉</name>
+            <description>獲得1點 力量 NL 你打出的下1張攻擊牌額外造成 !M! 點傷害</description>
         </SData>
         <SData branch = "48">
-            <name>肌肉放松</name>
-            <description>抽 !M! 张攻击牌。 NL 这些牌的基础伤害增加4点。</description>
+            <name>肌肉放鬆</name>
+            <description>抽 !M! 張攻擊牌 NL 增加其基礎傷害4點</description>
         </SData>
         <SData branch = "49">
-            <name>全副武装</name>
-            <description>每张已 升级 的手牌使你获得 !B! 点 格挡 。 NL 升级 所有手牌。</description>
+            <name>全副武裝</name>
+            <description>每張已 升級 的手牌使你獲得 !B! 點 格擋 NL 升級 所有手牌</description>
         </SData>
         <SData branch = "50">
-            <name>武装到位</name>
-            <description>保留 。 NL 升级 1张手牌，获得等同于其最大面板属性的 格挡 。重复2次。</description>
+            <name>武裝到位</name>
+            <description>保留 NL 升級 1張手牌，獲得等同於其最大面板屬性的 格擋2次</description>
         </SData>
         <SData branch = "51">
             <name>暴躁</name>
-            <description>打出此牌后，本回合每当你打出1张攻击牌时，抽1张其他攻击牌。 NL 消耗 。</description>
+            <description>打出此牌後，本回合每打出1張攻擊牌，抽1張其他攻擊牌。 NL 消耗 </description>
         </SData>
         <SData branch = "52">
             <name>暴怒</name>
-            <description>打出此牌后，本回合每当你攻击时，你获得 !M! 点 格挡 。</description>
+            <description>打出此牌後，本回合每打出1張攻擊牌，獲得 !M! 點 格擋 </description>
         </SData>
         <SData branch = "53">
-            <name>狂乱</name>
-            <description>抽 !M! 张攻击牌。 NL 随机改变抽到牌本回合的耗能。</description>
+            <name>狂亂</name>
+            <description>抽 !M! 張攻擊牌 NL 隨機改變抽到牌本回合的耗能</description>
         </SData>
         <SData branch = "74">
-            <name>湮灭</name>
-            <description>打出并 消耗 1张耗能不大于2的手牌。 NL 消耗 。</description>
+            <name>湮滅</name>
+            <description>打出並 消耗 1張耗能不大於2的手牌 NL 消耗 </description>
         </SData>
         <SData branch = "75">
             <name>浩劫</name>
-            <description>不能被打出 。 NL 抽到该牌时 将该牌 消耗 同时打出你抽牌堆和弃牌堆中各1张随机牌的复制。</description>
+            <description> 無法打出 NL 當你抽到這張牌 打出你抽牌堆和棄牌堆中各1張隨機牌的複製，然後 消耗</description>
         </SData>
     </BaseTextData>
 </LocalSets>

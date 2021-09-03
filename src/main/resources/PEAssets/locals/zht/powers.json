@@ -10,23 +10,23 @@
     "prevolution:NoxiousDust": {
         "NAME": "毒粉",
         "DESCRIPTIONS": [
-            "[owner_name] 的回合结束时，给予所有敌人 #b[amt_0] 层 #y中毒 。",
+            "[owner_name] 的回合結束時，給予所有敵人 #b[amt_0] 層 #y中毒 ",
             ""
         ]
     },
 
     "prevolution:NoxiousGas": {
-        "NAME": "毒气",
+        "NAME": "毒氣",
         "DESCRIPTIONS": [
-            "[owner_name] 的回合开始时，给予 #b1 名随机敌人 #b[amt_0] 层 #y中毒 #b[amt_1] 次。",
+            "[owner_name] 的回合開始時，給予 #b1 名隨機敵人 #b[amt_0] 層 #y中毒 #b[amt_1] 次",
             ""
         ]
     },
 
     "prevolution:Bruise": {
-        "NAME": "瘀伤",
+        "NAME": "瘀傷",
         "DESCRIPTIONS": [
-            "[owner_name] 额外受到 #b[amt_0] 点攻击伤害。回合结束时，瘀伤减少 #b[amt_1] 层。",
+            "[owner_name] 額外受到 #b[amt_0] 點攻擊傷害。回合結束時，瘀傷減少 #b[amt_1] 層",
             ""
         ]
     },
@@ -34,15 +34,15 @@
     "prevolution:Bleeding": {
         "NAME": "出血",
         "DESCRIPTIONS": [
-            "[owner_name] 受到攻击时，失去 #b[amt_0] 点生命值，同时出血减少 #b[amt_1] 层。",
+            "[owner_name] 受到攻擊時，失去 #b[amt_0] 點生命值，同時出血減少 #b[amt_1] 層",
             ""
         ]
     },
 
     "prevolution:MachineResearch": {
-        "NAME": "机器研究",
+        "NAME": "機器研究",
         "DESCRIPTIONS": [
-            "[owner_name] 在 [owner_name] 的回合抽牌时，除回合开始抽牌外，每次额外抽 #b[amt_0] 张牌。",
+            "[owner_name] 在 [owner_name] 的回合抽牌時，除回合開始抽牌外，每次額外抽 #b[amt_0] 張牌",
             ""
         ]
     },
@@ -50,7 +50,7 @@
     "prevolution:Irritability": {
         "NAME": "暴躁",
         "DESCRIPTIONS": [
-            "本回合你每打出 #b1 张攻击牌，抽 #b[amt_0] 张攻击牌。",
+            "本回合你每打出 #b1 張攻擊牌，抽 #b[amt_0] 張攻擊牌",
             ""
         ]
     },
@@ -58,7 +58,7 @@
     "prevolution:Fury": {
         "NAME": "暴怒",
         "DESCRIPTIONS": [
-            "本回合每当 [owner_name] 攻击时，获得 #b[amt_0] 点 #y格挡 。",
+            "本回合每當 [owner_name] 攻擊時，獲得 #b[amt_0] 點 #y格擋 ",
             ""
         ]
     },
@@ -66,7 +66,7 @@
     "prevolution:ExitStanceEndTurn": {
         "NAME": "理性",
         "DESCRIPTIONS": [
-            "当前回合结束时，退出 #y[crt_0] 。",
+            "當前回合結束時，退出 #y[crt_0] ",
             ""
         ]
     },
@@ -74,7 +74,7 @@
     "prevolution:Trance": {
         "NAME": "恍惚",
         "DESCRIPTIONS": [
-            "在 #b[amt_0] 个回合后，失去 #b[amt_1] 点 #y集中 。",
+            "在 #b[amt_0] 個回合後，失去 #b[amt_1] 點 #y集中 ",
             ""
         ]
     }

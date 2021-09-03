@@ -70,6 +70,9 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
             case ZHS:
                 map.put(Evolution.GetEvoKeyword(), "该牌有多种不同的升级分支");
                 break;
+            case ZHT:
+                map.put(Evolution.GetEvoKeyword(), "該牌有多種不同的陞級分支");
+                break;
             default:
                 map.put(Evolution.GetEvoKeyword(), "This card has different upgrade branches.");
         }

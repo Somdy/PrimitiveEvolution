@@ -3,11 +3,11 @@
     <BaseTextData ID = "Watcher">
         <SData branch = "61">
             <name>瞋目</name>
-            <description>造成 !D! 点伤害。 NL 进入 愤怒 。 NL 回合结束时，退出 愤怒 。</description>
+            <description>造成 !D! 點傷害。 NL 進入 憤怒 。 NL 回合結束時，退出 憤怒 。</description>
         </SData>
         <SData branch = "62">
             <name>怒猊</name>
-            <description>造成 !D! 点伤害。 NL 进入 愤怒 。 NL 若已处于 *愤怒 ，则伤害翻倍。</description>
+            <description>造成 !D! 點傷害。 NL 進入 憤怒 。 NL 若已處於 *憤怒 ，則傷害翻倍。</description>
         </SData>
     </BaseTextData>
 </LocalSets>

@@ -41,6 +41,8 @@ public class DataPool {
         switch (Settings.language) {
             case ZHS:
                 return "zhs";
+            case ZHT:
+                return "zht";
             default:
                 return "eng";
         }

@@ -3,23 +3,23 @@
     <BaseTextData ID = "Defect">
         <SData branch = "58">
             <name>相對接觸</name>
-            <description>造成 !D! 點傷害。 NL 如果你在這回合打出的牌數少於 !M! 張，打出抽牌堆中2張隨機牌。</description>
+            <description>造成 !D! 點傷害 NL 如果你在這回合打出的牌數少於 !M! 張，打出抽牌堆中2張隨機牌</description>
         </SData>
         <SData branch = "59">
             <name>突破次元</name>
-            <description>造成 !D! 點傷害。 NL 如果你在這回合打出的牌數少於 !M! 張，從5張任意顏色的牌中選擇1張加入手牌。</description>
+            <description>造成 !D! 點傷害 NL 如果你在這回合打出的牌數少於 !M! 張，從5張任意顏色的牌中選擇1張加入手牌</description>
         </SData>
         <SData branch = "60">
             <name>往返過往</name>
-            <description>造成 !D! 點傷害。 NL 如果你在這回合打出的牌數少於 !M! 張，從上回合抽取牌中選擇最多2張加入手牌並獲得 消耗 。</description>
+            <description>造成 !D! 點傷害 NL 如果你在這回合打出的牌數少於 !M! 張，從上回合抽取牌中選擇最多2張加入手牌並獲得 消耗 </description>
         </SData>
         <SData branch = "69">
             <name>標記射線</name>
-            <description>對所有敵人造成 !D! 點傷害。 NL lmkmod:突破 目標時，給予其 !M! 回合 跟踪鎖定 。</description>
+            <description>對所有敵人造成 !D! 點傷害 NL lmkmod:突破 目標時，給予 !M! 回合 跟蹤鎖定 </description>
         </SData>
         <SData branch = "70">
             <name>掃蕩雷射</name>
-            <description>對所有敵人造成 !D! 點傷害。 NL 抽 !M! 張耗能為1的技能牌。</description>
+            <description>對所有敵人造成 !D! 點傷害 NL 抽 !M! 張耗能為1的技能牌</description>
         </SData>
     </BaseTextData>
 </LocalSets>
