@@ -11,7 +11,7 @@ public class NoxiousDustPower extends AbstractEvolutionPower {
     public static final String POWER_ID = Nature.MakeID("NoxiousDust");
     
     public NoxiousDustPower(AbstractCreature owner, int amount) {
-        super(POWER_ID, "dust", PowerType.DEBUFF, owner);
+        super(POWER_ID, "dust", PowerType.BUFF, owner);
         setValues(amount);
         updateDescription();
     }

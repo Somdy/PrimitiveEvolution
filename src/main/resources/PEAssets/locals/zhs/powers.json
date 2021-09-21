@@ -77,5 +77,13 @@
             "在 #b[amt_0] 个回合后，失去 #b[amt_1] 点 #y集中 。",
             ""
         ]
+    },
+
+    "prevolution:DamageNextTurn": {
+        "NAME": "二次打击",
+        "DESCRIPTIONS": [
+            "在下回合开始时，对 [owner_name] 造成 #b[amt_0] 点攻击伤害。",
+            ""
+        ]
     }
 }

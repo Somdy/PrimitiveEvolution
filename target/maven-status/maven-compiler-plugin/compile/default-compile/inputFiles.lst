@@ -4,6 +4,7 @@ D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveev
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\defect\SweepingBeamEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\silent\TacticianEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\powers\BruisePower.java
+D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\powers\DamageNextTurnPower.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\silent\SurvivorEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\silent\DaggerThrowEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\patches\AddEvolvableTooltipPatch.java
@@ -21,6 +22,7 @@ D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveev
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\powers\AbstractEvolutionPower.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\silent\DodgeAndRollEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\watcher\VigilanceEvo.java
+D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\ironclad\ClashEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\silent\ExpertiseEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\ironclad\RampageEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\Evolution.java
@@ -51,6 +53,7 @@ D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveev
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\defect\WhiteNoiseEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\defect\FusionEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\defect\ZapEvo.java
+D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\ironclad\UppercutEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\cards\defect\DualcastEvo.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\powers\BleedingPower.java
 D:\Slay The Spire Project\MyMods\PrimitiveEvolution\src\main\java\rs\primitiveevolution\powers\ExitStanceEndTurnPower.java

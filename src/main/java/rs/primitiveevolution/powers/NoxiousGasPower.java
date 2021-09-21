@@ -12,7 +12,7 @@ public class NoxiousGasPower extends AbstractEvolutionPower {
     public static final String POWER_ID = Nature.MakeID("NoxiousGas");
     
     public NoxiousGasPower(AbstractCreature owner, int poisonAmt, int times) {
-        super(POWER_ID, "gas", PowerType.DEBUFF, owner);
+        super(POWER_ID, "gas", PowerType.BUFF, owner);
         setValues(poisonAmt, times);
         updateDescription();
     }

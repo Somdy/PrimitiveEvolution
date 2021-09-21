@@ -79,4 +79,11 @@ public final class BranchID {
     public static final int RandomSignals = 76;
     public static final int LimitedBandwidth = 77;
     public static final int Imply = 78;
+    public static final int HandClash = 79;
+    public static final int Stalemate = 80;
+    public static final int HeavyUppercut = 81;
+    public static final int UpperPunch = 82;
+    public static final int BrutalUppercut = 83;
+    public static final int IronHead = 84;
+    public static final int HeadToHead = 85;
 }

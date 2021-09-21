@@ -31,7 +31,7 @@
         </SData>
         <SData branch = "74">
             <name>Annihilate</name>
-            <description>Choose a card in hand that costs no more than 3. Play it and Exhaust it. NL Exhaust.</description>
+            <description>Choose a card in hand that costs 2 or less. Play it and Exhaust it. NL Exhaust.</description>
         </SData>
         <SData branch = "75">
             <name>Catastrophe</name>
