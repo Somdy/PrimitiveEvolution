@@ -49,5 +49,18 @@
             <name>Imply</name>
             <description>Innate. NL Add a random Power to your hand. NL It costs 0 this turn. NL Exhaust.</description>
         </SData>
+        <!--9月25日更新!-->
+        <SData branch = "86">
+            <name>Focused Shields</name>
+            <description>If you have no Block, gain !B! Block. This is affected by Focus.</description>
+        </SData>
+        <SData branch = "87">
+            <name>Shields of Frost</name>
+            <description>Trigger the passive ability of all Frost orbs twice.</description>
+        </SData>
+        <SData branch = "88">
+            <name>Overloaded Shields</name>
+            <description>Channel 2 prevolution:Overloaded Frost orbs based on half of your current Block. NL Exhaust.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

@@ -15,7 +15,7 @@
         </SData>
         <SData branch = "50">
             <name>武装到位</name>
-            <description>保留 。 NL 升级 1张手牌，获得等同于其最大面板属性的 格挡 。重复2次。</description>
+            <description>升级 1张手牌，重复2次。 NL 抽1张其他技能牌。</description>
         </SData>
         <SData branch = "51">
             <name>暴躁</name>

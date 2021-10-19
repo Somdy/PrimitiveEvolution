@@ -137,16 +137,20 @@ public class VigilanceEvo extends Evolution {
             CtClass m = pool.get(AbstractMonster.class.getName());
             CtMethod applyPowers = CtNewMethod.make(voidType, "applyPowers", new CtClass[0], null,
                     "{int real = this.baseBlock; if(" + AbstractDungeon.class.getName()
-                            + ".player.stance.ID.equals(\"Calm\")) " +
-                            "this.baseBlock += this.magicNumber; super.applyPowers(); this.baseBlock = real;" +
+                            + ".player.stance.ID.equals(\"Calm\") && " + VigilanceEvo.class.getName()
+                            + ".isAlertness(this)) this.baseBlock += this.magicNumber; super.applyPowers(); this.baseBlock = real;" +
                             " this.isBlockModified = this.block != this.baseBlock;}", ctClass);
             CtMethod calcd = CtNewMethod.make(voidType, "calculateCardDamage", new CtClass[]{m}, null,
                     "{int real = this.baseBlock; if(" + AbstractDungeon.class.getName()
-                            + ".player.stance.ID.equals(\"Calm\")) " +
-                            "this.baseBlock += this.magicNumber; super.calculateCardDamage($$); this.baseBlock = real;" +
+                            + ".player.stance.ID.equals(\"Calm\") && " + VigilanceEvo.class.getName()
+                            + ".isAlertness(this)) this.baseBlock += this.magicNumber; super.calculateCardDamage($$); this.baseBlock = real;" +
                             " this.isBlockModified = this.block != this.baseBlock;}", ctClass);
             ctClass.addMethod(applyPowers);
             ctClass.addMethod(calcd);
         }
+    }
+    
+    public static boolean isAlertness(Vigilance _inst) {
+        return _inst instanceof EvolvableCard && ((EvolvableCard) _inst).evolanch() == Alertness;
     }
 }

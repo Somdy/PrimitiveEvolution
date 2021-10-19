@@ -53,5 +53,34 @@
             <name>Awfully Angry</name>
             <description>Deal !D! damage. NL Apply !M! prevolution:Bruise . NL Shuffle a copy whose damage is increased by !M! of this card into discard pile.</description>
         </SData>
+        <!--9月6日更新!-->
+        <SData branch = "79">
+            <name>Close Clash</name>
+            <description>Can be played only at the enemy that intends to attack. NL Deal !D! damage.</description>
+        </SData>
+        <SData branch = "80">
+            <name>Stalemate</name>
+            <description>Retain for a turn when drawn. NL Deal !D! damage. Deal 2 less for each non-Attack in hand.</description>
+        </SData>
+        <SData branch = "81">
+            <name>Sudden Bash</name>
+            <description>Deal !D! damage. NL Target loses 4 Strength this turn. NL Apply !M! prevolution:Bruise.</description>
+        </SData>
+        <SData branch = "82">
+            <name>Upper Punch</name>
+            <description>Deal !D! damage and apply !M! Vulnerable. NL Deal !D! damage to the target at the start of next turn.</description>
+        </SData>
+        <SData branch = "83">
+            <name>Brute Force</name>
+            <description>Deal !D! damage. NL If this deals unblocked damage, transfer a random debuff from yourself to the target.</description>
+        </SData>
+        <SData branch = "84">
+            <name>Iron Headed</name>
+            <description>Deal !D! damage. NL Return a random Skill in discard pile to hand.</description>
+        </SData>
+        <SData branch = "85">
+            <name>Head to Head</name>
+            <description>Deal !D! damage. NL If the target intends to attack, choose a Skill from draw pile and add it to hand.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

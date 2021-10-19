@@ -47,11 +47,11 @@ public class ChannelOverloadedOrbAction extends LMCustomGameAction {
     }
     
     private OrbType getRelativeType(AbstractOrb from) {
-        if (from instanceof Lightning || from instanceof LightningOL)
+        if (from instanceof Lightning)
             return OrbType.Lightning;
-        if (from instanceof Frost || from instanceof FrostOL)
+        if (from instanceof Frost)
             return OrbType.Frost;
-        if (from instanceof Dark || from instanceof DarkOL)
+        if (from instanceof Dark)
             return OrbType.Dark;
         return OrbType.None;
     }
@@ -63,6 +63,7 @@ public class ChannelOverloadedOrbAction extends LMCustomGameAction {
     @Override
     public void update() {
         isDone = true;
-        addToTop(new ChannelAction(orb));
+        if (orb != null) 
+            addToTop(new ChannelAction(orb));
     }
 }

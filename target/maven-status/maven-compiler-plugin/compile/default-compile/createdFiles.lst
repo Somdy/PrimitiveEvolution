@@ -1,4 +1,6 @@
+rs\primitiveevolution\cards\defect\DefragmentEvo$Evolve.class
 rs\primitiveevolution\datas\DataPool$1.class
+rs\primitiveevolution\actions\ImpulseOrbsAction.class
 rs\primitiveevolution\cards\silent\TacticianEvo$TriggerOnManualDiscard.class
 rs\primitiveevolution\cards\defect\MachineLearningEvo$1.class
 rs\primitiveevolution\patches\AddEvolvableTooltipPatch.class
@@ -19,9 +21,11 @@ rs\primitiveevolution\cards\ironclad\RampageEvo$Use.class
 rs\primitiveevolution\cards\silent\DodgeAndRollEvo.class
 rs\primitiveevolution\cards\silent\ExpertiseEvo.class
 rs\primitiveevolution\cards\Evolution$1.class
+rs\primitiveevolution\cards\ironclad\CarnageEvo$Use.class
 rs\primitiveevolution\cards\ironclad\UppercutEvo$Upgrade.class
 rs\primitiveevolution\datas\BranchID.class
 rs\primitiveevolution\cards\silent\TacticianEvo$CanUse.class
+rs\primitiveevolution\cards\ironclad\CarnageEvo$Upgrade.class
 rs\primitiveevolution\cards\ironclad\IronWaveEvo$CalculateCardDamage.class
 rs\primitiveevolution\cards\ironclad\HavocEvo$Evolve.class
 rs\primitiveevolution\cards\silent\DaggerThrowEvo.class
@@ -32,6 +36,7 @@ rs\primitiveevolution\cards\silent\FlechettesEvo$Use$1.class
 rs\primitiveevolution\cards\silent\SkewerEvo$Upgrade.class
 rs\primitiveevolution\cards\ironclad\BashEvo$1.class
 rs\primitiveevolution\cards\ironclad\HavocEvo$Upgrade.class
+rs\primitiveevolution\cards\defect\AutoShieldsEvo$Use.class
 rs\primitiveevolution\cards\silent\ExpertiseEvo$Use$1.class
 rs\primitiveevolution\cards\defect\DualcastEvo$1.class
 rs\primitiveevolution\cards\ironclad\ClashEvo.class
@@ -91,6 +96,7 @@ rs\primitiveevolution\cards\silent\SliceEvo$Use$1.class
 rs\primitiveevolution\cards\ironclad\ArmamentsEvo.class
 rs\primitiveevolution\cards\silent\NeutralizeEvo$Use.class
 rs\primitiveevolution\cards\silent\SurvivorEvo$Use.class
+rs\primitiveevolution\cards\defect\AutoShieldsEvo$Evolve.class
 rs\primitiveevolution\cards\defect\ZapEvo$Use.class
 rs\primitiveevolution\cards\watcher\VigilanceEvo$Use$1.class
 rs\primitiveevolution\cards\defect\WhiteNoiseEvo.class
@@ -114,6 +120,7 @@ rs\primitiveevolution\cards\defect\DualcastEvo$Use.class
 rs\primitiveevolution\cards\ironclad\HavocEvo$Use$1.class
 rs\primitiveevolution\cards\ironclad\UppercutEvo.class
 rs\primitiveevolution\Nature$1.class
+rs\primitiveevolution\cards\ironclad\CarnageEvo$Evolve.class
 rs\primitiveevolution\cards\defect\FusionEvo$Use.class
 rs\primitiveevolution\cards\defect\WhiteNoiseEvo$Evolve.class
 rs\primitiveevolution\cards\silent\DodgeAndRollEvo$Evolve.class
@@ -126,6 +133,7 @@ rs\primitiveevolution\cards\ironclad\UppercutEvo$1.class
 rs\primitiveevolution\cards\silent\TacticianEvo.class
 rs\primitiveevolution\cards\ironclad\ClashEvo$Use.class
 rs\primitiveevolution\powers\NoxiousDustPower.class
+rs\primitiveevolution\cards\ironclad\CarnageEvo$1.class
 rs\primitiveevolution\cards\ironclad\WildStrikeEvo.class
 rs\primitiveevolution\cards\silent\FlechettesEvo$OnMoveToDiscard.class
 rs\primitiveevolution\cards\defect\ConserveBatteryEvo$Evolve.class
@@ -146,6 +154,7 @@ rs\primitiveevolution\cards\ironclad\FlexEvo$Evolve.class
 rs\primitiveevolution\cards\silent\DaggerSprayEvo$1.class
 rs\primitiveevolution\cards\ironclad\FlexEvo$Use.class
 rs\primitiveevolution\cards\watcher\VigilanceEvo$1.class
+rs\primitiveevolution\cards\defect\AutoShieldsEvo.class
 rs\primitiveevolution\orbs\DarkOL.class
 rs\primitiveevolution\cards\defect\SweepingBeamEvo$Evolve.class
 rs\primitiveevolution\cards\silent\SkewerEvo$Use.class
@@ -154,16 +163,20 @@ rs\primitiveevolution\cards\defect\MachineLearningEvo$Use$1.class
 rs\primitiveevolution\cards\ironclad\HeadbuttEvo$Upgrade.class
 rs\primitiveevolution\cards\defect\ConserveBatteryEvo.class
 rs\primitiveevolution\cards\ironclad\RampageEvo$Evolve.class
+rs\primitiveevolution\cards\defect\AutoShieldsEvo$Upgrade.class
 rs\primitiveevolution\cards\silent\SurvivorEvo.class
 rs\primitiveevolution\cards\defect\ConserveBatteryEvo$Use.class
 rs\primitiveevolution\cards\silent\DodgeAndRollEvo$1.class
 rs\primitiveevolution\cards\silent\FlechettesEvo$Upgrade.class
+rs\primitiveevolution\actions\unique\WildBlowAction.class
 rs\primitiveevolution\cards\defect\SweepingBeamEvo$Use.class
 rs\primitiveevolution\cards\ironclad\ArmamentsEvo$Evolve.class
 rs\primitiveevolution\cards\defect\DualcastEvo$Upgrade.class
 rs\primitiveevolution\powers\AbstractEvolutionPower.class
+rs\primitiveevolution\cards\ironclad\CarnageEvo$ApplyPowerMethods.class
 rs\primitiveevolution\cards\silent\SurvivorEvo$Evolve.class
 rs\primitiveevolution\cards\defect\SweepingBeamEvo.class
+rs\primitiveevolution\cards\defect\DefragmentEvo$Use.class
 rs\primitiveevolution\cards\defect\FTLEvo.class
 rs\primitiveevolution\cards\defect\FTLEvo$Use$1.class
 rs\primitiveevolution\cards\silent\ExpertiseEvo$1.class
@@ -176,6 +189,7 @@ rs\primitiveevolution\cards\silent\SliceEvo$1.class
 rs\primitiveevolution\cards\ironclad\FlexEvo$Upgrade.class
 rs\primitiveevolution\datas\BaseTextData.class
 rs\primitiveevolution\cards\silent\FlechettesEvo$CanUse.class
+rs\primitiveevolution\cards\defect\AutoShieldsEvo$ApplyPowerMethods.class
 rs\primitiveevolution\cards\ironclad\HavocEvo$1.class
 rs\primitiveevolution\cards\defect\WhiteNoiseEvo$1.class
 rs\primitiveevolution\cards\watcher\EruptionEvo$1.class
@@ -198,11 +212,13 @@ rs\primitiveevolution\cards\silent\NoxiousFumesEvo$Upgrade.class
 rs\primitiveevolution\cards\ironclad\WildStrikeEvo$WildStrikeField.class
 rs\primitiveevolution\cards\silent\DaggerThrowEvo$Upgrade.class
 rs\primitiveevolution\cards\defect\ConserveBatteryEvo$Upgrade.class
+rs\primitiveevolution\cards\defect\DefragmentEvo.class
 rs\primitiveevolution\cards\ironclad\RampageEvo$Upgrade.class
 rs\primitiveevolution\cards\watcher\EruptionEvo$Use.class
 rs\primitiveevolution\cards\ironclad\RageEvo$Upgrade.class
 rs\primitiveevolution\cards\defect\SweepingBeamEvo$1.class
 rs\primitiveevolution\cards\ironclad\FlexEvo$1.class
+rs\primitiveevolution\cards\defect\AutoShieldsEvo$1.class
 rs\primitiveevolution\cards\ironclad\RageEvo$Evolve.class
 rs\primitiveevolution\cards\ironclad\UppercutEvo$Evolve.class
 rs\primitiveevolution\cards\silent\SkewerEvo.class
@@ -214,6 +230,7 @@ rs\primitiveevolution\cards\defect\FusionEvo$Upgrade.class
 rs\primitiveevolution\cards\ironclad\ArmamentsEvo$Upgrade.class
 rs\primitiveevolution\cards\ironclad\CleaveEvo$1.class
 rs\primitiveevolution\cards\silent\TacticianEvo$Upgrade.class
+rs\primitiveevolution\cards\defect\DefragmentEvo$Upgrade.class
 rs\primitiveevolution\cards\watcher\EruptionEvo$Upgrade.class
 rs\primitiveevolution\Nature.class
 rs\primitiveevolution\actions\ChannelOverloadedOrbAction$OrbType.class
@@ -235,10 +252,12 @@ rs\primitiveevolution\cards\ironclad\ClashEvo$Upgrade.class
 rs\primitiveevolution\cards\silent\SkewerEvo$CalculateCardDamage.class
 rs\primitiveevolution\cards\ironclad\WildStrikeEvo$HasEnoughEnergy.class
 rs\primitiveevolution\cards\ironclad\RampageEvo.class
+rs\primitiveevolution\cards\ironclad\CarnageEvo.class
 rs\primitiveevolution\cards\silent\DodgeAndRollEvo$Upgrade.class
 rs\primitiveevolution\cards\defect\SweepingBeamEvo$Upgrade.class
 rs\primitiveevolution\cards\ironclad\HeadbuttEvo$Evolve.class
 rs\primitiveevolution\cards\defect\WhiteNoiseEvo$Upgrade.class
+rs\primitiveevolution\cards\defect\DefragmentEvo$1.class
 rs\primitiveevolution\cards\ironclad\BashEvo$Use.class
 rs\primitiveevolution\cards\watcher\VigilanceEvo.class
 rs\primitiveevolution\cards\silent\DaggerSprayEvo.class

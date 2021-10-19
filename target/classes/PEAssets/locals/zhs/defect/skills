@@ -49,5 +49,18 @@
             <name>暗示</name>
             <description>固有 。 NL 将1张随机能力牌加入手牌。这张牌本回合耗能为0。 NL 消耗 。</description>
         </SData>
+        <!--9月25日更新!-->
+        <SData branch = "86">
+            <name>集成护盾</name>
+            <description>你如果没有 格挡 ，获得 !B! 点 格挡 。 NL （受 集中 影响）</description>
+        </SData>
+        <SData branch = "87">
+            <name>冰冻防护</name>
+            <description>使用所有的 冰霜 充能球 的被动能力2次。</description>
+        </SData>
+        <SData branch = "88">
+            <name>护盾超载</name>
+            <description>生成2个数值等同于你当前 格挡 值一半的 prevolution:超载 冰霜 。 NL 消耗 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

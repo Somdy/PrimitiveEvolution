@@ -70,12 +70,11 @@ public class ArmamentsEvo extends Evolution {
             });
             add(() -> {
                 upgradeEvolvedTexts(card, ArmedToTeeth);
-                setBlock(card, 4);
+                setBlock(card, 2);
             });
             add(() -> {
                 upgradeEvolvedTexts(card, ArmAtArms);
-                setBaseCost(card, 2);
-                card.selfRetain = true;
+                setBaseCost(card, 0);
             });
         }};
     }
@@ -140,14 +139,12 @@ public class ArmamentsEvo extends Evolution {
                                             card.upgrade();
                                             card.superFlash();
                                             card.applyPowers();
-                                            int max = Math.max(card.block, Math.max(card.magicNumber, card.damage));
-                                            if (max > 0)
-                                                addToTop(new GainBlockAction(p, p, max));
                                             return true;
                                         }
                                     })
                             );
                         }
+                        addToBot(new DrawExptCardAction(p, 1, c -> c.type == AbstractCard.CardType.SKILL && c != _inst));
                         return SpireReturn.Return(null);
                 }
             }

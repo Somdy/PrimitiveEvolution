@@ -53,5 +53,34 @@
             <name>極度憤怒</name>
             <description>造成 !D! 點傷害 NL 給予 !M! 層 prevolution:瘀傷 NL 複製1張傷害增加 !M! 點的此牌洗入棄牌堆</description>
         </SData>
+        <!--9月6日更新!-->
+        <SData branch = "79">
+            <name>短兵相接</name>
+            <description>只能对有攻击意图的敌人打出。 NL 造成 !D! 点伤害。</description>
+        </SData>
+        <SData branch = "80">
+            <name>僵持</name>
+            <description>抽取时 保留 1回合。 NL 造成 !D! 点伤害。手牌中每张非攻击牌使该牌伤害减少2点。</description>
+        </SData>
+        <SData branch = "81">
+            <name>猛然痛击</name>
+            <description>造成 !D! 点伤害。 NL 使目标本回合失去4点 力量 。 NL 给予 !M! 层 prevolution:瘀伤 。</description>
+        </SData>
+        <SData branch = "82">
+            <name>升龙拳</name>
+            <description>造成 !D! 点伤害并给予 !M! 层 易伤 。 NL 下回合开始时，对目标再造成 !D! 点伤害。</description>
+        </SData>
+        <SData branch = "83">
+            <name>蛮力制服</name>
+            <description>造成 !D! 点伤害。 NL lmkmod:突破 时，将自己身上随机一种负面效果转移到目标身上。</description>
+        </SData>
+        <SData branch = "84">
+            <name>头铁</name>
+            <description>造成 !D! 点伤害。 NL 将弃牌堆中 1 张随机技能牌移回手牌。</description>
+        </SData>
+        <SData branch = "85">
+            <name>硬碰硬</name>
+            <description>造成 !D! 点伤害。 NL 如果敌人的意图是攻击，将抽牌堆中 1 张技能牌加入手牌。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

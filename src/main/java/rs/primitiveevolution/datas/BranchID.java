@@ -86,4 +86,13 @@ public final class BranchID {
     public static final int BrutalUppercut = 83;
     public static final int IronHead = 84;
     public static final int HeadToHead = 85;
+    public static final int IntegratedShields = 86;
+    public static final int FrozenShields = 87;
+    public static final int OverloadedShields = 88;
+    public static final int Jigsaw = 89;
+    public static final int Cache = 90;
+    public static final int Brick = 91;
+    public static final int Slaughter = 92;
+    public static final int Injury = 93;
+    public static final int WildBlow = 94;
 }

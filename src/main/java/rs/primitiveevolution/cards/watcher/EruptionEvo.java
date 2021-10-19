@@ -27,8 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect.FIRE;
-import static rs.primitiveevolution.datas.BranchID.Glare;
-import static rs.primitiveevolution.datas.BranchID.Irate;
+import static rs.primitiveevolution.datas.BranchID.*;
 
 public class EruptionEvo extends Evolution {
 
@@ -126,16 +125,20 @@ public class EruptionEvo extends Evolution {
             CtClass m = pool.get(AbstractMonster.class.getName());
             CtMethod applyPowers = CtNewMethod.make(voidType, "applyPowers", new CtClass[0], null, 
                     "{int real = this.baseDamage; if(" + AbstractDungeon.class.getName()
-                            + ".player.stance.ID.equals(\"Wrath\")) " +
-                            "this.baseDamage *= 2; super.applyPowers(); this.baseDamage = real;" +
+                            + ".player.stance.ID.equals(\"Wrath\") && " + EruptionEvo.class.getName()
+                            + ".isIrate(this)) this.baseDamage *= 2; super.applyPowers(); this.baseDamage = real;" +
                             " this.isDamageModified = this.damage != this.baseDamage;}", ctClass);
             CtMethod calcd = CtNewMethod.make(voidType, "calculateCardDamage", new CtClass[]{m}, null,
                     "{int real = this.baseDamage; if(" + AbstractDungeon.class.getName()
-                            + ".player.stance.ID.equals(\"Wrath\")) " +
-                            "this.baseDamage *= 2; super.calculateCardDamage($$); this.baseDamage = real;" +
+                            + ".player.stance.ID.equals(\"Wrath\") && " + EruptionEvo.class.getName()
+                            + ".isIrate(this)) this.baseDamage *= 2; super.calculateCardDamage($$); this.baseDamage = real;" +
                             " this.isDamageModified = this.damage != this.baseDamage;}", ctClass);
             ctClass.addMethod(applyPowers);
             ctClass.addMethod(calcd);
         }
+    }
+    
+    public static boolean isIrate(Eruption _inst) {
+        return _inst instanceof EvolvableCard && ((EvolvableCard) _inst).evolanch() == Irate;
     }
 }
