@@ -15,7 +15,7 @@
         </SData>
         <SData branch = "50">
             <name>武装到位</name>
-            <description>保留 。 NL 升级 1张手牌，获得等同于其最大面板属性的 格挡 。重复2次。</description>
+            <description>升级 1张手牌，重复2次。 NL 抽1张其他技能牌。</description>
         </SData>
         <SData branch = "51">
             <name>暴躁</name>
@@ -36,6 +36,15 @@
         <SData branch = "75">
             <name>浩劫</name>
             <description>不能被打出 。 NL 抽到该牌时 将该牌 消耗 同时打出你抽牌堆和弃牌堆中各1张随机牌的复制。</description>
+        </SData>
+        <!--10/21!-->
+        <SData branch = "97">
+            <name>抵御</name>
+            <description>获得 !B! 点 *多层护甲 （受格挡能力加成）。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "98">
+            <name>防不胜防</name>
+            <description>获得 !B! 点 格挡 !M! 次。</description>
         </SData>
     </BaseTextData>
 </LocalSets>

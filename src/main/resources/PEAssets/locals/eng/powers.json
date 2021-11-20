@@ -77,5 +77,21 @@
             "Lose #b[amt_1] #yFocus in #b[amt_0] turns.",
             ""
         ]
+    },
+
+    "prevolution:DamageNextTurn": {
+        "NAME": "Dragon's Return",
+        "DESCRIPTIONS": [
+            "Deal #b[amt_0] damage to [owner_name] at the start of next turn.",
+            ""
+        ]
+    },
+
+    "prevolution:BoomerangReturn": {
+        "NAME": "Boomerang",
+        "DESCRIPTIONS": [
+            "If there exsists #y[crt_0] in discard pile next turn, return it to your hand.",
+            ""
+        ]
     }
 }

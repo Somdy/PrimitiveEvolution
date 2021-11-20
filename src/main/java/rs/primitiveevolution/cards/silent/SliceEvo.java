@@ -65,7 +65,7 @@ public class SliceEvo extends Evolution {
             });
             add(() -> {
                 upgradeEvolvedTexts(card, Incise);
-                setDamage(card, 7);
+                setDamage(card, 4);
                 setBaseCost(card, 1);
             });
         }};

@@ -95,5 +95,30 @@
             <name>乱打</name>
             <description>对随机敌人造成伤害。 NL 伤害等同于抽牌堆、手牌和弃牌堆中 !M! 张其他随机攻击牌的伤害之和。</description>
         </SData>
+        <SData branch = "95">
+            <name>挥砍</name>
+            <description>造成 !D! 点伤害。 NL 你打出的下一张攻击牌额外造成 !M! 点伤害。</description>
+        </SData>
+        <SData branch = "96">
+            <name>假打</name>
+            <description>造成 !D! 点伤害。 NL 下次打出时 消耗 。</description>
+        </SData>
+        <SData branch = "99">
+            <name>回旋飞剑</name>
+            <description>对随机敌人造成 !D! 点伤害 !M! 次。 NL 下回合开始时，如果该牌在弃牌堆中，将其移回手牌。</description>
+        </SData>
+        <SData branch = "100">
+            <name>刀剑弹射</name>
+            <description>对随机敌人造成 !D! 点伤害 !M! 次。 NL 每次给予目标4层 prevolution:瘀伤 。</description>
+        </SData>
+        <!--10/29!-->
+        <SData branch = "101">
+            <name>重劈</name>
+            <description>造成 !D! 点伤害。 NL 给予 !M! 层 prevolution:瘀伤 （受伤害能力加成）。 NL 力量 在该牌上发挥3倍效果。</description>
+        </SData>
+        <SData branch = "102">
+            <name>急刃</name>
+            <description>造成 !D! 点伤害。 NL 打出后，你每剩余一点 [E] , 力量 在该牌上额外生效1次。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

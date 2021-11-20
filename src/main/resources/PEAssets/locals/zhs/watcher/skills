@@ -9,5 +9,17 @@
             <name>夕惕</name>
             <description>获得 !B! 点 格挡 。 NL 进入 平静 。 NL 抽1张攻击牌并使其 保留 1回合。</description>
         </SData>
+        <SData branch = "101">
+            <name>一挥而就</name>
+            <description>抽空你的抽牌堆。 NL 打出并 消耗 每张超出上限的牌。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "102">
+            <name>候笔疾书</name>
+            <description>下回合开始时，抽牌直到手牌上限。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "103">
+            <name>行云流水</name>
+            <description>本回合你每打出1张牌，抽1张牌并使其本回合耗能减少1点。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

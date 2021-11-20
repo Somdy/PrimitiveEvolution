@@ -85,5 +85,13 @@
             "在下回合开始时，对 [owner_name] 造成 #b[amt_0] 点攻击伤害。",
             ""
         ]
+    },
+
+    "prevolution:BoomerangReturn": {
+        "NAME": "回旋",
+        "DESCRIPTIONS": [
+            "在下回合开始时，如果 #y[crt_0] 在弃牌堆中，将其移回手牌。",
+            ""
+        ]
     }
 }

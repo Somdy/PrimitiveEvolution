@@ -61,7 +61,7 @@ public class AngerEvo extends Evolution {
             add(() -> {
                 upgradeEvolvedTexts(card, RationalAnger);
                 setBaseCost(card, 1);
-                setDamage(card, 8);
+                setDamage(card, 10);
                 card.exhaust = true;
             });
             add(() -> {

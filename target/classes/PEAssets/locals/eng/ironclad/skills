@@ -37,5 +37,14 @@
             <name>Catastrophe</name>
             <description>Unplayable. NL When drawn, exhaust this card and play a copy of a random card in your draw pile. Repeat this for a random card in discard pile.</description>
         </SData>
+        <!--10/21!-->
+        <SData branch = "97">
+            <name>Resist</name>
+            <description>Gain !B! *Plated *Armor (Affected by block-gaining modifier powers). NL Exhaust.</description>
+        </SData>
+        <SData branch = "98">
+            <name>Multi-Defend</name>
+            <description>Gain !B! Block !M! times.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

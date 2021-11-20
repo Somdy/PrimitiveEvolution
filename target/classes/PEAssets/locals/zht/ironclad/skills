@@ -37,5 +37,14 @@
             <name>浩劫</name>
             <description> 無法打出 NL 當你抽到這張牌 打出你抽牌堆和棄牌堆中各1張隨機牌的複製，然後 消耗</description>
         </SData>
+        <!--10/21!-->
+        <SData branch = "97">
+            <name>抵御</name>
+            <description>获得 !B! 点 *多层护甲 （受格挡能力加成）。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "98">
+            <name>防不胜防</name>
+            <description>获得 !B! 点 格挡 !M! 次。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

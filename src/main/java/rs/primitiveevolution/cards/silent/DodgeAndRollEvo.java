@@ -85,10 +85,10 @@ public class DodgeAndRollEvo extends Evolution {
         }
     }
 
-    @SpirePatch(clz = Survivor.class, method = "use")
+    @SpirePatch(clz = DodgeAndRoll.class, method = "use")
     public static class Use {
         @SpirePrefixPatch
-        public static SpireReturn Prefix(Survivor _inst, AbstractPlayer p, AbstractMonster m) {
+        public static SpireReturn Prefix(AbstractCard _inst, AbstractPlayer p, AbstractMonster m) {
             if (_inst instanceof EvolvableCard && _inst.upgraded) {
                 switch (((EvolvableCard) _inst).evolanch()) {
                     case SwiftDodge:

@@ -82,5 +82,34 @@
             <name>硬碰硬</name>
             <description>造成 !D! 点伤害。 NL 如果敌人的意图是攻击，将抽牌堆中 1 张技能牌加入手牌。</description>
         </SData>
+        <!--10/16!-->
+        <SData branch = "92">
+            <name>屠宰</name>
+            <description>虚无 。 NL 造成 !D! 点伤害。手牌中每有1张其他攻击牌，额外造成 !M! 点伤害。</description>
+        </SData>
+        <SData branch = "93">
+            <name>落井下石</name>
+            <description>虚无 。 NL 造成 !D! 点伤害。如果目标具有任何负面效果，再造成一次伤害。</description>
+        </SData>
+        <SData branch = "94">
+            <name>乱打</name>
+            <description>对随机敌人造成伤害。 NL 伤害等同于抽牌堆、手牌和弃牌堆中 !M! 张其他随机攻击牌的伤害之和。</description>
+        </SData>
+        <SData branch = "95">
+            <name>挥砍</name>
+            <description>造成 !D! 点伤害。 NL 你打出的下一张攻击牌额外造成 !M! 点伤害。</description>
+        </SData>
+        <SData branch = "96">
+            <name>假打</name>
+            <description>造成 !D! 点伤害。 NL 下次打出时 消耗 。</description>
+        </SData>
+        <SData branch = "99">
+            <name>回旋飞剑</name>
+            <description>对随机敌人造成 !D! 点伤害 !M! 次。 NL 下回合开始时，如果该牌在弃牌堆中，将其移回手牌。</description>
+        </SData>
+        <SData branch = "100">
+            <name>刀剑弹射</name>
+            <description>对随机敌人造成 !D! 点伤害 !M! 次。 NL 每次给予目标4层 prevolution:瘀伤 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

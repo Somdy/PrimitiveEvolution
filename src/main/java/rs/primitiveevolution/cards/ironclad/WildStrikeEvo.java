@@ -58,7 +58,7 @@ public class WildStrikeEvo extends Evolution {
             add(() -> {
                 upgradeEvolvedTexts(card, IntrepidStrike);
                 setDamage(card, 24);
-                setMagic(card, 3);
+                setMagic(card, 2);
                 card.cardsToPreview = null;
             });
             add(() -> {

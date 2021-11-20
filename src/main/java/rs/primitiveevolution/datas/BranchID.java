@@ -95,4 +95,13 @@ public final class BranchID {
     public static final int Slaughter = 92;
     public static final int Injury = 93;
     public static final int WildBlow = 94;
+    public static final int Slash = 95;
+    public static final int FakeStrike = 96;
+    public static final int Resist = 97;
+    public static final int MultiDefence = 98;
+    public static final int ManueverBoomerang = 99;
+    public static final int SplitSwords = 100;
+    public static final int Scrawling = 101;
+    public static final int Skipping = 102;
+    public static final int Sketching = 103;
 }

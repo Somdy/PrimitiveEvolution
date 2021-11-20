@@ -82,5 +82,34 @@
             <name>Head to Head</name>
             <description>Deal !D! damage. NL If the target intends to attack, choose a Skill from draw pile and add it to hand.</description>
         </SData>
+        <!--10/16!-->
+        <SData branch = "92">
+            <name>Slaughter</name>
+            <description>Ethereal. NL Deal !D! damage. Increases its damage by !M! for each other Attack in hand.</description>
+        </SData>
+        <SData branch = "93">
+            <name>Hit on Injury</name>
+            <description>Ethereal. NL Deal !D! damage. If the target has any debuff, deal damage to it once again.</description>
+        </SData>
+        <SData branch = "94">
+            <name>Wild Blows</name>
+            <description>Deal damage to a random enemy. NL The damage equals to the sum of other unexhausted Attacks's damage.</description>
+        </SData>
+        <SData branch = "95">
+            <name>Slash</name>
+            <description>Deal !D! damage. NL Your next Attack deals !M! extra damage.</description>
+        </SData>
+        <SData branch = "96">
+            <name>Feint</name>
+            <description>Deal !D! damage. NL This exhausts next played.</description>
+        </SData>
+        <SData branch = "99">
+            <name>Manuever Boomerang</name>
+            <description>Deal !D! damage to a random enemy !M! times. NL If it's in your discard pile at the start of next turn, return it to your hand.</description>
+        </SData>
+        <SData branch = "100">
+            <name>Sharp Sword</name>
+            <description>Deal !D! damage to a random enemy !M! times. NL Apply 4 prevolution:Bruise to the target each time.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>
