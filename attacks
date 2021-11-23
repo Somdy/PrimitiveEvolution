@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Watcher">
+        <SData branch = "61">
+            <name>瞋目</name>
+            <description>造成 !D! 点伤害。 NL 进入 愤怒 。 NL 回合结束时，退出 愤怒 。</description>
+        </SData>
+        <SData branch = "62">
+            <name>怒猊</name>
+            <description>造成 !D! 点伤害。 NL 进入 愤怒 。 NL 若已处于 *愤怒 ，则伤害翻倍。</description>
+        </SData>
+        <!--11/23!-->
+        <SData branch = "104">
+            <name>快速打击</name>
+            <description>造成 !D! 点伤害 !M! 次。</description>
+        </SData>
+        <SData branch = "105">
+            <name>爆发打击</name>
+            <description>造成 !D! 点伤害。 NL 消耗 。</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>
