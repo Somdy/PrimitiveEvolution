@@ -19,8 +19,8 @@
         <ActLikeIt.version>0.1.2</ActLikeIt.version>
         <LMK.version>1.0.19</LMK.version>
         <LocalLib.path>D:\oData\Slay The Spire Project\MyMods\lib</LocalLib.path>
-        <Steam.path>D:\oData\Programme Files\Steam\steamapps</Steam.path>
-        <SpireCustomMod.path>D:\oData\Programme Files\Steam\steamapps\common\SlayTheSpire\mods</SpireCustomMod.path>
+        <Steam.path>E:\steam\steamapps</Steam.path>
+        <SpireCustomMod.path>E:\steam\steamapps\common\SlayTheSpire\mods</SpireCustomMod.path>
     </properties>
 
     <dependencies>
