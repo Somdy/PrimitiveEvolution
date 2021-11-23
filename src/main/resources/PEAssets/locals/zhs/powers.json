@@ -93,5 +93,21 @@
             "在下回合开始时，如果 #y[crt_0] 在弃牌堆中，将其移回手牌。",
             ""
         ]
+    },
+
+    "prevolution:Skipping": {
+        "NAME": "候笔疾书",
+        "DESCRIPTIONS": [
+            "在下回合开始时，抽牌直到手牌为空。",
+            ""
+        ]
+    },
+
+    "prevolution:Sketching": {
+        "NAME": "行云流水",
+        "DESCRIPTIONS": [
+            "本回合你每打出 #b1 张牌，抽 #b1 张牌并使其本回合内下次打出前耗能减少 #b1 点。",
+            ""
+        ]
     }
 }
