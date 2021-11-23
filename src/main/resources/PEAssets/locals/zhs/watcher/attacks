@@ -9,5 +9,22 @@
             <name>怒猊</name>
             <description>造成 !D! 点伤害。 NL 进入 愤怒 。 NL 若已处于 *愤怒 ，则伤害翻倍。</description>
         </SData>
+        <!--11/23!-->
+        <SData branch = "104">
+            <name>快速打击</name>
+            <description>造成 !D! 点伤害 !M! 次。</description>
+        </SData>
+        <SData branch = "105">
+            <name>爆发打击</name>
+            <description>造成 !D! 点伤害。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "108">
+            <name>关键碰撞</name>
+            <description>当前每有一名敌人，造成 !D! 点伤害。 NL 保留 。</description>
+        </SData>
+        <SData branch = "109">
+            <name>减压碰撞</name>
+            <description>当前每有一名敌人，造成 !D! 点伤害。若击杀了目标，获得 [W] 。 NL 消耗 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

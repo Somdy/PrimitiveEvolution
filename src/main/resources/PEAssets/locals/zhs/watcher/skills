@@ -21,5 +21,22 @@
             <name>行云流水</name>
             <description>本回合你每打出1张牌，抽1张牌并使其本回合内下次打出前耗能减少1点。 NL 该效果在同个回合内不会叠加。</description>
         </SData>
+        <!--11/23!-->
+        <SData branch = "106">
+            <name>远见防御</name>
+            <description>获得 !B! 点 格挡 。 NL 预见 !M! 。</description>
+        </SData>
+        <SData branch = "107">
+            <name>神圣防御</name>
+            <description>获得 !B! 点 格挡 。 NL 获得 !M! 点 真言 。</description>
+        </SData>
+        <SData branch = "110">
+            <name>全面评估</name>
+            <description>获得 !B! 点 格挡 。 NL 将 !M! 张 *洞见 加入抽牌堆。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "111">
+            <name>细致评估</name>
+            <description>获得 !B! 点 格挡 。 NL 将一张 *洞见 加入抽牌堆。 NL 预见 !M! 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>
