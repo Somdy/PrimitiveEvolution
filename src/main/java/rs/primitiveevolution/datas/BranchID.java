@@ -104,4 +104,7 @@ public final class BranchID {
     public static final int Scrawling = 101;
     public static final int Skipping = 102;
     public static final int Sketching = 103;
+    // 11-23
+    public static final int FastBeat = 104;
+    public static final int BurstBlow = 105;
 }
