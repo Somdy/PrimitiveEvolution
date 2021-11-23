@@ -104,4 +104,13 @@ public final class BranchID {
     public static final int Scrawling = 101;
     public static final int Skipping = 102;
     public static final int Sketching = 103;
+    // 11-23
+    public static final int Strike_P_Fast = 104;
+    public static final int Strike_P_Burst = 105;
+    public static final int Defence_P_Foresee = 106;
+    public static final int Defence_P_Holy = 107;
+    public static final int BowlingBash_Critical = 108;
+    public static final int BowlingBash_Decompress = 109;
+    public static final int Evaluate_Power = 110;
+    public static final int Evaluate_Foresee = 111;
 }
