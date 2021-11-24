@@ -113,4 +113,21 @@ public final class BranchID {
     public static final int BowlingBash_Decompress = 109;
     public static final int Evaluate_Power = 110;
     public static final int Evaluate_Foresee = 111;
+    // 11-24
+    public static final int PressurePoints_Multi = 112;
+    public static final int PressurePoints_Ignite = 113;
+    public static final int JustLucky_Holy = 114;
+    public static final int JustLucky_PressurePoint = 115;
+    public static final int CrushJoints_Vary = 116;
+    public static final int CrushJoints_Cripple = 117;
+    public static final int Halt_Stable = 118;
+    public static final int Halt_Critical = 119;
+    public static final int EmptyFist_Light = 120;
+    public static final int EmptyFist_Critical = 121;
+    public static final int Crescendo_Careful = 122;
+    public static final int Crescendo_Origin = 123;
+    public static final int SashWhip_PressurePoint = 124;
+    public static final int SashWhip_Cripple = 125;
+    public static final int FlurryOfBlows_Soft = 126;
+    public static final int FlurryOfBlows_Fast = 127;
 }
