@@ -130,4 +130,19 @@ public final class BranchID {
     public static final int SashWhip_Cripple = 125;
     public static final int FlurryOfBlows_Soft = 126;
     public static final int FlurryOfBlows_Fast = 127;
+    // 11-25
+    public static final int LessonLearned_retain = 128;
+    public static final int LessonLearned_hurt = 129;
+    // 12-01
+    public static final int FlyingSleeves_Melter = 130;
+    public static final int FlyingSleeves_PressurePoint = 131;
+    // 12-04
+    public static final int EmptyBody_Light = 132;
+    public static final int EmptyBody_Critical = 133;
+    public static final int FollowUp_Lightening = 134;
+    public static final int FollowUp_Wind = 135;
+    // 12-05
+    public static final int Consecrate_Holy = 136;
+    public static final int Consecrate_Heavy = 137;
+    public static final int RushDown_FreeFlow = 138;
 }
