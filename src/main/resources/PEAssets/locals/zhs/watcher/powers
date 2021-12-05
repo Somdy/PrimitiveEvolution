@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Watcher">
+        <SData branch = "138">
+            <name>行云流水</name>
+            <description>每当你切换姿态时，抽1张牌。</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

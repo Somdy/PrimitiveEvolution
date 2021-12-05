@@ -67,5 +67,37 @@
             <name>多罗叶指</name>
             <description>造成 !D! 点 伤害 !M! 次。 NL 每当转换姿态时，将此牌从弃牌堆加入手牌。</description>
         </SData>
+        <SData branch = "128">
+            <name>程门立雪</name>
+            <description> 保留 。 NL 造成 !D! 点 伤害。 NL 斩杀 时， 升级 牌组中一张随机卡牌。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "129">
+            <name>悬梁刺股</name>
+            <description>失去 !M! 点 生命，造成 !D! 点 伤害。 NL 斩杀 时， 升级 牌组中一张随机卡牌。</description>
+        </SData>
+        <SData branch = "130">
+            <name>破气式</name>
+            <description> 保留 。 NL 移除目标所有格挡。 NL 造成 !D! 点 伤害两次。</description>
+        </SData>
+        <SData branch = "131">
+            <name>太乙神拂</name>
+            <description> 保留 。 NL 造成 !D! 点 伤害两次，施加与未被格挡的伤害值相等的 *印记。 NL 所有敌人失去等于其 *印记 层数的生命。</description>
+        </SData>
+        <SData branch = "134">
+            <name>追击·雷</name>
+            <description>造成 !D! 点 伤害。 NL 若打出的上一张牌是攻击牌，获得 [W] 并抽1张牌。</description>
+        </SData>
+        <SData branch = "135">
+            <name>追击·风</name>
+            <description>造成 !D! 点 伤害。 NL 若打出的上一张牌是攻击牌，抽2张牌。</description>
+        </SData>
+        <SData branch = "136">
+            <name>虔诚供奉</name>
+            <description>对全体敌人造成 !D! 点 伤害。 NL 获得 !M! 层 真言 。</description>
+        </SData>
+        <SData branch = "137">
+            <name>庄重供奉</name>
+            <description>对全体敌人造成 !D! 点 伤害。 NL 消耗 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

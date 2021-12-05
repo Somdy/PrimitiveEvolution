@@ -63,5 +63,13 @@
             <name>本原渐强</name>
             <description>固有 。 NL 进入 愤怒 。 NL 消耗 。</description>
         </SData>
+        <SData branch = "132">
+            <name>轻灵化体</name>
+            <description>获得 !B! 点 格挡 。 NL 退出当前 姿态 。</description>
+        </SData>
+        <SData branch = "133">
+            <name>关键化体</name>
+            <description>保留 。 NL 获得 !B! 点 格挡 。 NL 退出当前 姿态 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>
