@@ -19,7 +19,7 @@
         </SData>
         <SData branch = "51">
             <name>Irritability</name>
-            <description>Whenever you play an Attack this turn, draw 1 other Attack. NL Exhaust.</description>
+            <description>Whenever you play an Attack this turn, draw 1 other Attack from draw pile. NL Exhaust.</description>
         </SData>
         <SData branch = "52">
             <name>Fury</name>

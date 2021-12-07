@@ -88,6 +88,15 @@ public abstract class Evolution {
         }
     }
     
+    public static String getGridUpgradeUI(int amount) {
+        switch (Settings.language) {
+            case ZHS:
+                return TEXT[3] + TEXT[11] + amount + TEXT[5];
+            default:
+                return "missing_text";
+        }
+    }
+    
     public static void upgradeEvolvedTexts(AbstractCard card, int branchID) {
         upgradeEvolvedName(card, branchID);
         upgradeEvolvedDescription(card, branchID);

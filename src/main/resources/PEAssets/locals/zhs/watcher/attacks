@@ -99,5 +99,10 @@
             <name>庄重供奉</name>
             <description>对全体敌人造成 !D! 点 伤害。 NL 消耗 。</description>
         </SData>
+        <!--12/07!-->
+        <SData branch = "139">
+            <name>有的放矢</name>
+            <description>造成 !D! 点 伤害。 NL 斩杀 时， 升级 牌组中一张卡牌。 NL 消耗 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

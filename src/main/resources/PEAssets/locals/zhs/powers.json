@@ -50,7 +50,7 @@
     "prevolution:Irritability": {
         "NAME": "暴躁",
         "DESCRIPTIONS": [
-            "本回合你每打出 #b1 张攻击牌，抽 #b[amt_0] 张攻击牌。",
+            "本回合你每打出 #b1 张攻击牌，从抽牌堆抽 #b[amt_0] 张攻击牌。",
             ""
         ]
     },

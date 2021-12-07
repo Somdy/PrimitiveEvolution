@@ -22,7 +22,8 @@ public class IrritabilityPower extends AbstractEvolutionPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (isCardTypeOf(card, AbstractCard.CardType.ATTACK) && amount > 0) {
             flash();
-            addToBot(new DrawExptCardAction(owner, amount, c -> isCardTypeOf(c, AbstractCard.CardType.ATTACK) && c != card));
+            addToBot(new DrawExptCardAction(owner, amount, c -> isCardTypeOf(c, AbstractCard.CardType.ATTACK) && c != card)
+                    .discardPileNotIncluded());
         }
     }
 

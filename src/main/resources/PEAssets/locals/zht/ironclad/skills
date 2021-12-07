@@ -19,7 +19,7 @@
         </SData>
         <SData branch = "51">
             <name>暴躁</name>
-            <description>打出此牌後，本回合每打出1張攻擊牌，抽1張其他攻擊牌。 NL 消耗 </description>
+            <description>打出此牌後，本回合每打出1張攻擊牌，从抽牌堆中抽1張其他攻擊牌。 NL 消耗 </description>
         </SData>
         <SData branch = "52">
             <name>暴怒</name>

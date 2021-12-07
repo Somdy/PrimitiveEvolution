@@ -145,4 +145,6 @@ public final class BranchID {
     public static final int Consecrate_Holy = 136;
     public static final int Consecrate_Heavy = 137;
     public static final int RushDown_FreeFlow = 138;
+    // 12-07
+    public static final int LearnLesson = 139;
 }

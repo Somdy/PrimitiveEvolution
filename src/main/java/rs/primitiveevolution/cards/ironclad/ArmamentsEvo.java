@@ -130,6 +130,7 @@ public class ArmamentsEvo extends Evolution {
                         for (int i = 0; i < 2; i++) {
                             addToBot(new SimpleHandCardSelectBuilder(AbstractCard::canUpgrade)
                                     .setAmount(1)
+                                    .setForUpgrade(true)
                                     .setCanPickZero(false)
                                     .setAnyNumber(false)
                                     .setMsg(ArmamentsAction.TEXT[0])
