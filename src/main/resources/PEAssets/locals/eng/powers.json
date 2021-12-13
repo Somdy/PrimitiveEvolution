@@ -50,7 +50,7 @@
     "prevolution:Irritability": {
         "NAME": "Irritability",
         "DESCRIPTIONS": [
-            "Whenver you play an Attack this turn, draw #b[amt_0] Attacks from draw pile.",
+            "Whenever you play an Attack this turn, draw #b[amt_0] Attack(s) from draw pile.",
             ""
         ]
     },

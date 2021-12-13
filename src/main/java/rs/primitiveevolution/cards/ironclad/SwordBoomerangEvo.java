@@ -108,7 +108,7 @@ public class SwordBoomerangEvo extends Evolution {
                     case ManueverBoomerang:
                         addToBot(new QuickAction(() -> {
                             for (int i = 0; i < _inst.magicNumber; i++) {
-                                Optional<AbstractMonster> mo = LMSK.GetExptMstr(c -> true);
+                                Optional<AbstractMonster> mo = LMSK.GetExptMstr(c -> !c.isDeadOrEscaped());
                                 mo.ifPresent(c -> addToTop(new NullableSrcDamageAction(c, new CustomDmgInfo(new DamageSource(p, _inst),
                                         _inst.damage, _inst.damageTypeForTurn), SLASH_HORIZONTAL)));
                             }
@@ -118,7 +118,7 @@ public class SwordBoomerangEvo extends Evolution {
                     case SplitSwords:
                         addToBot(new QuickAction(() -> {
                             for (int i = 0; i < _inst.magicNumber; i++) {
-                                Optional<AbstractMonster> mo = LMSK.GetExptMstr(c -> true);
+                                Optional<AbstractMonster> mo = LMSK.GetExptMstr(c -> !c.isDeadOrEscaped());
                                 mo.ifPresent(c -> addToTop(new DamageCallbackBuilder(c, new CustomDmgInfo(new DamageSource(p, _inst),
                                         _inst.damage, _inst.damageTypeForTurn), SLASH_HORIZONTAL, 
                                         crt -> addToTop(new ApplyPowerAction(crt, p, new BruisePower(crt, 4))))));
