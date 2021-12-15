@@ -9,5 +9,67 @@
             <name>Guard</name>
             <description>Gain !B! Block. NL Enter Calm. NL Draw an Attack and make it retain for a turn.</description>
         </SData>
+        <SData branch = "101">
+            <name>一挥而就</name>
+            <description>抽空你的抽牌堆。 NL 打出并 消耗 每张超出上限的牌。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "102">
+            <name>候笔疾书</name>
+            <description>固有 。 NL 下回合开始时，抽牌直到手牌上限。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "103">
+            <name>行云流水</name>
+            <description>本回合你每打出1张牌，抽1张牌并使其本回合内下次打出前耗能减少1点。 NL 该效果在同个回合内不会叠加。</description>
+        </SData>
+        <!--11/23!-->
+        <SData branch = "106">
+            <name>远见防御</name>
+            <description>获得 !B! 点 格挡 。 NL 预见 !M! 。</description>
+        </SData>
+        <SData branch = "107">
+            <name>神圣防御</name>
+            <description>获得 !B! 点 格挡 。 NL 获得 !M! 层 真言 。</description>
+        </SData>
+        <SData branch = "110">
+            <name>全面评估</name>
+            <description>获得 !B! 点 格挡 。 NL 将 !M! 张 *洞见 加入抽牌堆。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "111">
+            <name>细致评估</name>
+            <description>获得 !B! 点 格挡 。 NL 将一张 *洞见 加入抽牌堆。 NL 预见 !M! 。</description>
+        </SData>
+        <!--11/24!-->
+        <SData branch = "112">
+            <name>天山折梅手</name>
+            <description>对所有敌人施加 !M! 层 *印记 !M! 次。 NL 所有敌人失去等于其 *印记 层数的生命。</description>
+        </SData>
+        <SData branch = "113">
+            <name>大力金刚指</name>
+            <description>所有敌人失去等于其 *印记 层数的生命 !M! 次。</description>
+        </SData>
+        <SData branch = "118">
+            <name>稳妥停顿</name>
+            <description>预见 2 。 NL 获得 !B! 点 格挡 。 NL 若你处于 *愤怒 ，再获得 !M! 点 格挡 。</description>
+        </SData>
+        <SData branch = "119">
+            <name>关键停顿</name>
+            <description>保留 。 NL 获得 !B! 点 格挡 。 NL 若你处于 *愤怒 ，再获得 !M! 点 格挡 。</description>
+        </SData>
+        <SData branch = "122">
+            <name>谨慎渐强</name>
+            <description>保留 。 NL 预见 !M! 。 NL 进入 愤怒 。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "123">
+            <name>本原渐强</name>
+            <description>固有 。 NL 进入 愤怒 。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "132">
+            <name>轻灵化体</name>
+            <description>获得 !B! 点 格挡 。 NL 退出当前 姿态 。</description>
+        </SData>
+        <SData branch = "133">
+            <name>关键化体</name>
+            <description>保留 。 NL 获得 !B! 点 格挡 。 NL 退出当前 姿态 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>
