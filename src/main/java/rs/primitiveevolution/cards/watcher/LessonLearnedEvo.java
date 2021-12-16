@@ -77,7 +77,7 @@ public class LessonLearnedEvo extends Evolution {
             add(() -> {
                 upgradeEvolvedTexts(card, LearnLesson);
                 setBaseCost(card, 3);
-                setDamage(card, 20);
+                setDamage(card, 24);
             });
         }};
     }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Watcher">
+        <SData branch = "138">
+            <name>Mastery Flowing</name>
+            <description>Whenever you change Stances, draw a card.</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

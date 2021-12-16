@@ -53,7 +53,7 @@ public abstract class Evolution {
     }
     
     public static String getPlayHandCardUI(boolean exhaust, int times) {
-        switch (Settings.language) {
+        switch (Lang()) {
             case ZHS:
                 return TEXT[7] + (times > 1 ? (times + TEXT[9]) : "") + (exhaust ? TEXT[8] : "");
             default:
@@ -62,7 +62,7 @@ public abstract class Evolution {
     }
     
     public static String getGridToHandSelectUI(int opts, boolean anyNumber) {
-        switch (Settings.language) {
+        switch (Lang()) {
             case ZHS:
                 return TEXT[3] + (anyNumber ? TEXT[4] : "") + opts + TEXT[5] + TEXT[6];
             default:
@@ -71,7 +71,7 @@ public abstract class Evolution {
     }
     
     public static String getIncreasePropertiesUI(int increment) {
-        switch (Settings.language) {
+        switch (Lang()) {
             case ZHS:
                 return TEXT[0] + TEXT[2] + increment;
             default:
@@ -80,7 +80,7 @@ public abstract class Evolution {
     }
     
     public static String getUnplayableUI(int turns) {
-        switch (Settings.language) {
+        switch (Lang()) {
             case ZHS:
                 return TEXT[0] + turns + TEXT[1];
             default:
@@ -89,11 +89,21 @@ public abstract class Evolution {
     }
     
     public static String getGridUpgradeUI(int amount) {
-        switch (Settings.language) {
+        switch (Lang()) {
             case ZHS:
                 return TEXT[3] + TEXT[11] + amount + TEXT[5];
             default:
-                return "missing_text";
+                return TEXT[3] + amount + TEXT[5] + TEXT[11];
+        }
+    }
+    
+    private static Settings.GameLanguage Lang() {
+        switch (Settings.language) {
+            case ZHS:
+            case ZHT:
+                return Settings.GameLanguage.ZHS;
+            default:
+                return Settings.language;
         }
     }
     

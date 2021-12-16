@@ -65,14 +65,5 @@
             <name>切开</name>
             <description>造成 !D! 点伤害。 NL lmkmod:突破 时，选择将1张手牌的所有可变面板属性增加等同于 *突破 量的点数。</description>
         </SData>
-        <!--10/29!-->
-        <SData branch = "103">
-            <name>飞刺</name>
-            <description>造成 !D! 点伤害。 NL 如果至少造成了 !M! 点未被 格挡 的伤害，该牌获得 虚无 。</description>
-        </SData>
-        <SData branch = "104">
-            <name>暗刀</name>
-            <description>造成 !D! 点伤害。 NL 本回合获得 !M! 层 敏捷 。</description>
-        </SData>
     </BaseTextData>
 </LocalSets>

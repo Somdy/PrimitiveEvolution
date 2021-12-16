@@ -9,5 +9,100 @@
             <name>怒猊</name>
             <description>造成 !D! 點傷害。 NL 進入 憤怒 。 NL 若已處於 *憤怒 ，則傷害翻倍。</description>
         </SData>
+        <!--11/23!-->
+        <SData branch = "104">
+            <name>快速打击</name>
+            <description>造成 !D! 点伤害 !M! 次。</description>
+        </SData>
+        <SData branch = "105">
+            <name>爆发打击</name>
+            <description>造成 !D! 点伤害。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "108">
+            <name>关键碰撞</name>
+            <description>保留 。 NL 当前每有一名敌人，造成 !D! 点伤害。</description>
+        </SData>
+        <SData branch = "109">
+            <name>减压碰撞</name>
+            <description>当前每有一名敌人，造成 !D! 点伤害。若击杀了目标，获得 [W] 。 NL 消耗 。</description>
+        </SData>
+        <!--11/24!-->
+        <SData branch = "114">
+            <name>功德金</name>
+            <description>预见 !M! 。 NL 获得 !M! 层 真言 。 NL 造成 !D! 点 伤害。</description>
+        </SData>
+        <SData branch = "115">
+            <name>弹指神通</name>
+            <description>预见 !M! 。 NL 获得 !B! 点 格挡 。 NL 施加 !M! 层 *印记 。</description>
+        </SData>
+        <SData branch = "116">
+            <name>无相劫指</name>
+            <description>造成 !D! 点 伤害。 NL 若打出的上一张牌是技能牌，施加 !M! 层 虚弱 ；若是攻击牌，施加 !M! 层 易伤 。</description>
+        </SData>
+        <SData branch = "117">
+            <name>分筋错骨手</name>
+            <description>造成 !D! 点 伤害。 NL 若打出的上一张牌是技能牌，施加 !M! 层 易伤 ,并使其失去 !M! 点 力量 。</description>
+        </SData>
+        <SData branch = "120">
+            <name>轻灵化拳</name>
+            <description>造成 !D! 点 伤害。 NL 退出当前姿态。</description>
+        </SData>
+        <SData branch = "121">
+            <name>关键化拳</name>
+            <description>保留 。 NL 造成 !D! 点 伤害。 NL 退出当前姿态。</description>
+        </SData>
+        <SData branch = "124">
+            <name>银索金铃</name>
+            <description>造成 !D! 点 伤害3次。 NL 若打出的上一张牌是攻击牌，施加 !M! 层 虚弱 和 *印记 。</description>
+        </SData>
+        <SData branch = "125">
+            <name>毒龙鞭法</name>
+            <description>造成 !D! 点 伤害3次。 NL 若打出的上一张牌是攻击牌，施加 !M! 层 虚弱 和 脆弱 。</description>
+        </SData>
+        <SData branch = "126">
+            <name>云手</name>
+            <description>获得 !B! 点 格挡 ，施加 !M! 层 *印记 。 NL 每当转换姿态时，将此牌从弃牌堆加入手牌。</description>
+        </SData>
+        <SData branch = "127">
+            <name>多罗叶指</name>
+            <description>造成 !D! 点 伤害 !M! 次。 NL 每当转换姿态时，将此牌从弃牌堆加入手牌。</description>
+        </SData>
+        <SData branch = "128">
+            <name>程门立雪</name>
+            <description> 保留 。 NL 造成 !D! 点 伤害。 NL 斩杀 时， 升级 牌组中一张随机卡牌。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "129">
+            <name>悬梁刺股</name>
+            <description>失去 !M! 点 生命，造成 !D! 点 伤害。 NL 斩杀 时， 升级 牌组中一张随机卡牌。</description>
+        </SData>
+        <SData branch = "130">
+            <name>破气式</name>
+            <description> 保留 。 NL 移除目标所有格挡。 NL 造成 !D! 点 伤害两次。</description>
+        </SData>
+        <SData branch = "131">
+            <name>太乙神拂</name>
+            <description> 保留 。 NL 造成 !D! 点 伤害两次，施加与未被格挡的伤害值相等的 *印记。 NL 所有敌人失去等于其 *印记 层数的生命。</description>
+        </SData>
+        <SData branch = "134">
+            <name>追击·雷</name>
+            <description>造成 !D! 点 伤害。 NL 若打出的上一张牌是攻击牌，获得 [W] 并抽1张牌。</description>
+        </SData>
+        <SData branch = "135">
+            <name>追击·风</name>
+            <description>造成 !D! 点 伤害。 NL 若打出的上一张牌是攻击牌，抽2张牌。</description>
+        </SData>
+        <SData branch = "136">
+            <name>虔诚供奉</name>
+            <description>对全体敌人造成 !D! 点 伤害。 NL 获得 !M! 层 真言 。</description>
+        </SData>
+        <SData branch = "137">
+            <name>庄重供奉</name>
+            <description>对全体敌人造成 !D! 点 伤害。 NL 消耗 。</description>
+        </SData>
+        <!--12/07!-->
+        <SData branch = "139">
+            <name>有的放矢</name>
+            <description>造成 !D! 点 伤害。 NL 斩杀 时， 升级 牌组中一张卡牌。 NL 消耗 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

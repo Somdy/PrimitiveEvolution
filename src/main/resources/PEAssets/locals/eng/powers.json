@@ -90,7 +90,15 @@
     "prevolution:BoomerangReturn": {
         "NAME": "Boomerang",
         "DESCRIPTIONS": [
-            "If there exsists #y[crt_0] in discard pile next turn, return it to your hand.",
+            "If there exists #y[crt_0] in discard pile next turn, return it to your hand.",
+            ""
+        ]
+    },
+
+    "prevolution:FreeFlow": {
+        "NAME": "Mastery Flowing",
+        "DESCRIPTIONS": [
+            "Whenever you change #yStances , draw #b[amt_0] card(s).",
             ""
         ]
     }

@@ -111,14 +111,5 @@
             <name>刀剑弹射</name>
             <description>对随机敌人造成 !D! 点伤害 !M! 次。 NL 每次给予目标4层 prevolution:瘀伤 。</description>
         </SData>
-        <!--10/29!-->
-        <SData branch = "101">
-            <name>重劈</name>
-            <description>造成 !D! 点伤害。 NL 给予 !M! 层 prevolution:瘀伤 （受伤害能力加成）。 NL 力量 在该牌上发挥3倍效果。</description>
-        </SData>
-        <SData branch = "102">
-            <name>急刃</name>
-            <description>造成 !D! 点伤害。 NL 打出后，你每剩余一点 [E] , 力量 在该牌上额外生效1次。</description>
-        </SData>
     </BaseTextData>
 </LocalSets>
