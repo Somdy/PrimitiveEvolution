@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.purple.CrushJoints;
 import com.megacrit.cardcrawl.cards.purple.FlurryOfBlows;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -20,8 +19,6 @@ import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import rs.primitiveevolution.Nature;
-import rs.primitiveevolution.actions.unique.CrushJoints_Cripple_Action;
-import rs.primitiveevolution.actions.unique.CrushJoints_Vary_Action;
 import rs.primitiveevolution.cards.Evolution;
 import rs.primitiveevolution.interfaces.EvolvableCard;
 
@@ -106,7 +103,8 @@ public class FlurryOfBlowsEvo extends Evolution {
                         return SpireReturn.Return(null);
                     case FlurryOfBlows_Fast:
                         for ( int i = 0; i < _inst.magicNumber; i++ ){
-                            addToBot(new GainBlockAction(p, p, _inst.block));
+                            addToBot(new DamageAction(m, new DamageInfo(p, _inst.damage, _inst.damageTypeForTurn),
+                                    AbstractGameAction.AttackEffect.BLUNT_LIGHT));
                         }
                         return SpireReturn.Return(null);
                 }
