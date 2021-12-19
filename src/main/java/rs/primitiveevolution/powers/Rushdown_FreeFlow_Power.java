@@ -1,7 +1,6 @@
 package rs.primitiveevolution.powers;
 
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.stances.AbstractStance;
@@ -12,6 +11,7 @@ public class Rushdown_FreeFlow_Power extends AbstractEvolutionPower {
 
     public Rushdown_FreeFlow_Power(int amount) {
         super(POWER_ID, "gas", PowerType.BUFF, AbstractDungeon.player);
+        setValues(amount);
         updateDescription();
     }
 
