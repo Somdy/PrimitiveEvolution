@@ -91,7 +91,7 @@ public class RushdownEvo extends Evolution {
         @SpirePrefixPatch
         public static SpireReturn Prefix(AbstractCard _inst, AbstractPlayer p, AbstractMonster m) {
             if (_inst instanceof EvolvableCard && _inst.upgraded) {
-                if (((EvolvableCard) _inst).evolanch() == Consecrate_Holy) {
+                if (((EvolvableCard) _inst).evolanch() == RushDown_FreeFlow) {
                     addToBot(new ApplyPowerAction(p, p,
                             new Rushdown_FreeFlow_Power(_inst.magicNumber), _inst.magicNumber));
                     return SpireReturn.Return(null);

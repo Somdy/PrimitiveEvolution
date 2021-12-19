@@ -104,7 +104,7 @@ public class FlurryOfBlowsEvo extends Evolution {
                     case FlurryOfBlows_Fast:
                         for ( int i = 0; i < _inst.magicNumber; i++ ){
                             addToBot(new DamageAction(m, new DamageInfo(p, _inst.damage, _inst.damageTypeForTurn),
-                                    AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+                                    AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                         }
                         return SpireReturn.Return(null);
                 }
