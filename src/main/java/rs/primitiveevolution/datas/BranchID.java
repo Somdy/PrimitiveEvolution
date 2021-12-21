@@ -147,4 +147,6 @@ public final class BranchID {
     public static final int RushDown_FreeFlow = 138;
     // 12-07
     public static final int LearnLesson = 139;
+    // 12-21
+    public static final int FlurryOfBlows_Power = 140;
 }
