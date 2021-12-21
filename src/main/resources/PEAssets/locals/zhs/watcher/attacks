@@ -104,5 +104,10 @@
             <name>有的放矢</name>
             <description>造成 !D! 点 伤害。 NL 斩杀 时， 升级 牌组中一张卡牌。 NL 消耗 。</description>
         </SData>
+        <!--12/07!-->
+        <SData branch = "140">
+            <name>乱披风式</name>
+            <description>造成 !D! 点 伤害，在本场战斗中，此牌的伤害增加 !M! 点。 NL 每当转换姿态时，将此牌从弃牌堆加入手牌。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>
