@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.purple.FlurryOfBlows;
@@ -38,6 +39,8 @@ public class FlurryOfBlowsEvo extends Evolution {
                 return FlurryOfBlows_Soft;
             case 2:
                 return FlurryOfBlows_Fast;
+            case 3:
+                return FlurryOfBlows_Power;
             default:
                 return 0;
         }
@@ -61,6 +64,11 @@ public class FlurryOfBlowsEvo extends Evolution {
                 upgradeEvolvedTexts(card, FlurryOfBlows_Fast);
                 setDamage(card, 1);
                 setMagic(card, 4);
+            });
+            add(() -> {
+                upgradeEvolvedTexts(card, FlurryOfBlows_Power);
+                setDamage(card, 2);
+                setMagic(card, 2);
             });
         }};
     }
@@ -106,6 +114,11 @@ public class FlurryOfBlowsEvo extends Evolution {
                             addToBot(new DamageAction(m, new DamageInfo(p, _inst.damage, _inst.damageTypeForTurn),
                                     AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                         }
+                        return SpireReturn.Return(null);
+                    case FlurryOfBlows_Power:
+                        addToBot(new DamageAction(m, new DamageInfo(p, _inst.damage, _inst.damageTypeForTurn),
+                                AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                        addToBot(new ModifyDamageAction(_inst.uuid, _inst.magicNumber));
                         return SpireReturn.Return(null);
                 }
             }
