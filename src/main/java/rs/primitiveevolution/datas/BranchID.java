@@ -149,4 +149,6 @@ public final class BranchID {
     public static final int LearnLesson = 139;
     // 12-21
     public static final int FlurryOfBlows_Power = 140;
+    // 12-29
+    public static final int Eulogist = 141;
 }

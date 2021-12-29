@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Colorless">
+        <SData branch = "141">
+            <name>颂扬</name>
+            <description>本场战斗中 升级 当前所有卡牌。 NL 为所有 可进化 的牌随机选择升级分支。 NL 消耗 。</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>

@@ -27,6 +27,7 @@ import rs.lazymankits.actions.tools.HandCardManipulator;
 import rs.lazymankits.actions.utility.QuickAction;
 import rs.lazymankits.actions.utility.SimpleHandCardSelectBuilder;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
+import rs.lazymankits.utils.LMSK;
 import rs.primitiveevolution.Nature;
 import rs.primitiveevolution.cards.Evolution;
 import rs.primitiveevolution.interfaces.EvolvableCard;
@@ -70,7 +71,6 @@ public class ArmamentsEvo extends Evolution {
             });
             add(() -> {
                 upgradeEvolvedTexts(card, ArmedToTeeth);
-                setBlock(card, 2);
             });
             add(() -> {
                 upgradeEvolvedTexts(card, ArmAtArms);
@@ -112,13 +112,15 @@ public class ArmamentsEvo extends Evolution {
             if (_inst instanceof EvolvableCard && _inst.upgraded) {
                 switch (((EvolvableCard) _inst).evolanch()) {
                     case ArmedToTeeth:
+                        addToBot(new GainBlockAction(p, p, _inst.block));
                         addToBot(new QuickAction(() -> {
                             for (AbstractCard card : p.hand.group) {
-                                if (card.upgraded) {
-                                    addToTop(new GainBlockAction(p, p, _inst.block));
-                                    card.superFlash(Color.GRAY.cpy());
-                                }
                                 if (card.canUpgrade()) {
+                                    if (card instanceof EvolvableCard) {
+                                        int max = ((EvolvableCard) card).possibleBranches().size() - 1;
+                                        int branch = LMSK.CardRandomRng().random(0, max);
+                                        ((EvolvableCard) card).setChosenBranch(branch);
+                                    }
                                     card.upgrade();
                                     card.superFlash();
                                     card.applyPowers();

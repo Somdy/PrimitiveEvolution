@@ -148,5 +148,12 @@
             <name>Targeted Learning</name>
             <description>Deal !D! damage. NL If Fatal, upgrade a card in your deck. NL Exhaust.</description>
         </SData>
+        <!--12/07!-->
+        <SData branch = "140">
+<!--            <name>乱披风式</name>-->
+<!--            <description>造成 !D! 点 伤害，在本场战斗中，此牌的伤害增加 !M! 点。 NL 每当转换姿态时，将此牌从弃牌堆加入手牌。</description>-->
+            <name>Chaotic Blows</name>
+            <description>Deal !D! damage. Increase its damage by !M! for the rest of the combat. NL Whenever you change Stances, return it to hand from discard pile.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

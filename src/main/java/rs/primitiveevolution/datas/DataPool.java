@@ -18,6 +18,7 @@ public class DataPool {
     public static BaseTextData SILENTS;
     public static BaseTextData DEFECTS;
     public static BaseTextData WATCHERS;
+    public static BaseTextData COLORLESS;
     
     private static final String[] FILES = {"attacks", "powers", "skills"};
     
@@ -32,6 +33,7 @@ public class DataPool {
         loadIroncladDatas();
         loadDefectDatas();
         loadWatcherDatas();
+        loadColorlessDatas();
         Nature.Log("ALL data is loaded: " + (System.currentTimeMillis() - time) + " ms");
     }
     
@@ -128,6 +130,27 @@ public class DataPool {
             }
         } catch (Exception e) {
             Nature.Log("Failed to load watcher's card datas");
+            e.printStackTrace();
+        }
+    }
+    
+    private static void loadColorlessDatas() {
+        try {
+            Element[] elements = LoadElementsFromPath("PEAssets/locals/" + lang + "/colorless", FILES);
+            Element data;
+            for (int i = 0; i < elements.length; i++) {
+                if (i == 0) {
+                    Element head = elements[i];
+                    data = head.element("BaseTextData");
+                    COLORLESS = new BaseTextData("Colorless").copyData(data);
+                    continue;
+                }
+                Element e = elements[i];
+                data = e.element("BaseTextData");
+                COLORLESS.append(data);
+            }
+        } catch (Exception e) {
+            Nature.Log("Failed to load colorless card datas");
             e.printStackTrace();
         }
     }

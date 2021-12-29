@@ -11,7 +11,7 @@
         </SData>
         <SData branch = "49">
             <name>Armed To Teeth</name>
-            <description>For each Upgraded card in hand, gain !B! Block. NL Upgrade ALL hand.</description>
+            <description>Gain !B! Block. NL Upgrade ALL your hand. NL Choose a random branch for each *Evolvable card.</description>
         </SData>
         <SData branch = "50">
             <name>Arm At Arms</name>

@@ -11,7 +11,7 @@
         </SData>
         <SData branch = "49">
             <name>全副武装</name>
-            <description>每张已 升级 的手牌使你获得 !B! 点 格挡 。 NL 升级 所有手牌。</description>
+            <description>获得 !B! 点 格挡 。 NL 升级 所有手牌。 NL 为所有 *可进化 的牌随机选择升级分支。</description>
         </SData>
         <SData branch = "50">
             <name>武装到位</name>

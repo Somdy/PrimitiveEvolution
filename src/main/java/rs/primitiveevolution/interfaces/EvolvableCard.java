@@ -19,6 +19,8 @@ public interface EvolvableCard extends BranchableUpgradeCard {
                     return DataPool.DEFECTS.getData(branchID).getName();
                 case PURPLE:
                     return DataPool.WATCHERS.getData(branchID).getName();
+                case COLORLESS:
+                    return DataPool.COLORLESS.getData(branchID).getName();
                 default:
                     return null;
             }
@@ -38,6 +40,8 @@ public interface EvolvableCard extends BranchableUpgradeCard {
                     return DataPool.DEFECTS.getData(branchID).getText();
                 case PURPLE:
                     return DataPool.WATCHERS.getData(branchID).getText();
+                case COLORLESS:
+                    return DataPool.COLORLESS.getData(branchID).getText();
                 default:
                     return null;
             }

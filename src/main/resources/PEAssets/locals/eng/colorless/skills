@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LocalSets>
+    <BaseTextData ID = "Colorless">
+        <SData branch = "141">
+            <name>Eulogist</name>
+            <description>Upgrade ALL your cards for the rest of the combat. NL Choose a random branch for each *Evolvable card. NL Exhaust .</description>
+        </SData>
+    </BaseTextData>
+</LocalSets>
