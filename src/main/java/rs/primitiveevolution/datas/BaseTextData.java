@@ -6,6 +6,7 @@ import rs.lazymankits.utils.LMGameGeneralUtils;
 import rs.primitiveevolution.Nature;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class BaseTextData implements LMGameGeneralUtils {
@@ -39,6 +40,13 @@ public class BaseTextData implements LMGameGeneralUtils {
                     if (e.elements("description") != null) {
                         SData.text = e.elementText("description");
                     }
+                    if (e.element("msg") != null) {
+                        List<Element> msg = e.element("msg").elements();
+                        SData.initMsg(msg.size());
+                        for (int i = 0; i < msg.size(); i++) {
+                            SData.setMsg(i, msg.get(i).getText());
+                        }
+                    }
                     dataMap.put(SData.branchID, SData);
                 }
             }
@@ -62,6 +70,13 @@ public class BaseTextData implements LMGameGeneralUtils {
                     if (e.elements("description") != null) {
                         SData.text = e.elementText("description");
                     }
+                    if (e.element("msg") != null) {
+                        List<Element> msg = e.element("msg").elements();
+                        SData.initMsg(msg.size());
+                        for (int i = 0; i < msg.size(); i++) {
+                            SData.setMsg(i, msg.get(i).getText());
+                        }
+                    }
                     if (SData.valid())
                         dataMap.put(SData.branchID, SData);
                 }
@@ -75,11 +90,13 @@ public class BaseTextData implements LMGameGeneralUtils {
         public final int branchID;
         private String text;
         private String name;
+        private String[] msg;
         
         public SingleData(int branchID) {
             this.branchID = branchID;
             this.text = "missing description";
             this.name = "missing name";
+            this.msg = new String[] {"missing_msg_0", "missing_msg_1"};
         }
 
         public String getName() {
@@ -88,6 +105,32 @@ public class BaseTextData implements LMGameGeneralUtils {
 
         public String getText() {
             return text;
+        }
+        
+        private SingleData initMsg(int size) {
+            msg = new String[size];
+            return this;
+        }
+        
+        private SingleData setMsg(int slot, String what) {
+            if (slot >= msg.length) {
+                Nature.Log("Asked for " + slot + "th msg but " + name + " has only " + (msg.length - 1));
+                slot = msg.length - 1;
+            }
+            msg[slot] = what;
+            return this;
+        }
+        
+        public String getMsg(int slot) {
+            if (slot >= msg.length) {
+                Nature.Log("Asked for " + slot + "th msg but " + name + " has only " + (msg.length - 1));
+                slot = msg.length - 1;
+            }
+            return msg[slot];
+        }
+        
+        public String[] getMsg() {
+            return msg;
         }
         
         public boolean valid() {

@@ -51,7 +51,29 @@
         </SData>
         <SData branch = "27">
             <name>瞻前顾后</name>
-            <description>丢弃 !M! 张牌。 NL 你当前手牌本回合耗能减少1点。</description>
+            <description>丢弃 !M! 张手牌。 NL 你当前手牌本回合耗能减少1点。</description>
+        </SData>
+        <SData branch = "142">
+            <name>准备妥善</name>
+            <description>丢弃至多 !M! 张手牌，每张抽1张与其类型相同的其他牌。</description>
+            <msg>
+                <i>丢弃，每张抽于其类型相同的其他牌。</i>
+            </msg>
+        </SData>
+        <SData branch = "143">
+            <name>未雨绸缪</name>
+            <description>丢弃 !M! 张手牌。 NL 回合结束时，将第一张被选中的牌从弃牌堆或抽牌堆移至手牌。</description>
+            <msg>
+                <i>丢弃。第一张牌在回合结束时会从弃牌堆或抽牌堆移至手牌。</i>
+            </msg>
+        </SData>
+        <SData branch = "144">
+            <name>藏匿的盾</name>
+            <description>获得 !B! 点 格挡 。 NL 从手牌丢弃时，获得 !M! 点 *多层护甲 。</description>
+        </SData>
+        <SData branch = "145">
+            <name>加护防御</name>
+            <description>获得 !B! 点 格挡 。 NL 本回合你受到的攻击伤害减少1点。</description>
         </SData>
     </BaseTextData>
 </LocalSets>

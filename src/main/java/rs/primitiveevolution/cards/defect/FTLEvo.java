@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.blue.FTL;
-import com.megacrit.cardcrawl.cards.green.Flechettes;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
@@ -206,7 +205,7 @@ public class FTLEvo extends Evolution {
                     && !BranchableUpgradePatch.OptFields.SelectingBranch.get(AbstractDungeon.gridSelectScreen)
                     && !HandCardSelectFixPatch.HandOptFields.SelectingBranch.get(AbstractDungeon.handCardSelectScreen)) {
                 if (((EvolvableCard) _inst).evolanch() != 0) {
-                    _inst.rawDescription = ((EvolvableCard) _inst).getEvovledText(((EvolvableCard) _inst).evolanch());
+                    _inst.rawDescription = ((EvolvableCard) _inst).getEvolvedText(((EvolvableCard) _inst).evolanch());
                 }
             }
             return SpireReturn.Continue();
@@ -218,7 +217,7 @@ public class FTLEvo extends Evolution {
         @SpirePostfixPatch
         public static void Postfix(AbstractCard _inst) {
             if (_inst instanceof EvolvableCard && _inst.upgraded) {
-                _inst.rawDescription = ((EvolvableCard) _inst).getEvovledText(((EvolvableCard) _inst).evolanch());
+                _inst.rawDescription = ((EvolvableCard) _inst).getEvolvedText(((EvolvableCard) _inst).evolanch());
                 _inst.initializeDescription();
             }
         }

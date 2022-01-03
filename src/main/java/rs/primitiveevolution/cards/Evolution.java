@@ -7,8 +7,10 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import javassist.*;
+import org.apache.commons.lang3.NotImplementedException;
 import org.jetbrains.annotations.NotNull;
 import rs.primitiveevolution.Nature;
+import rs.primitiveevolution.datas.DataPool;
 import rs.primitiveevolution.interfaces.EvolvableCard;
 
 import java.lang.reflect.Method;
@@ -114,7 +116,7 @@ public abstract class Evolution {
     
     public static void upgradeEvolvedDescription(AbstractCard card, int branchID) {
         if (card instanceof EvolvableCard) {
-            card.rawDescription = ((EvolvableCard) card).getEvovledText(branchID);
+            card.rawDescription = ((EvolvableCard) card).getEvolvedText(branchID);
             card.initializeDescription();
         }
     }
@@ -139,12 +141,12 @@ public abstract class Evolution {
             try {
                 card.timesUpgraded++;
                 card.upgraded = true;
-                card.name = ((EvolvableCard) card).getEvovledName(branchID);
+                card.name = ((EvolvableCard) card).getEvolvedName(branchID);
                 Method initializeTitle = AbstractCard.class.getDeclaredMethod("initializeTitle");
                 initializeTitle.setAccessible(true);
                 initializeTitle.invoke(card);
             } catch (Exception e) {
-                Nature.Log("Failed to upgrade " + card.name + "'s name to " + ((EvolvableCard) card).getEvovledName(branchID));
+                Nature.Log("Failed to upgrade " + card.name + "'s name to " + ((EvolvableCard) card).getEvolvedName(branchID));
             }
         }
     }
@@ -209,6 +211,23 @@ public abstract class Evolution {
         card.cost = amt;
         card.costForTurn = card.cost + diff;
         card.upgradedCost = true;
+    }
+    
+    protected static String getEvolvedMsg(AbstractCard card, int branchID, int slot) {
+        switch (card.color) {
+            case RED:
+                return DataPool.IRONCLADS.getData(branchID).getMsg(slot);
+            case GREEN:
+                return DataPool.SILENTS.getData(branchID).getMsg(slot);
+            case BLUE:
+                return DataPool.DEFECTS.getData(branchID).getMsg(slot);
+            case PURPLE:
+                return DataPool.WATCHERS.getData(branchID).getMsg(slot);
+            case COLORLESS:
+                return DataPool.COLORLESS.getData(branchID).getMsg(slot);
+            default:
+                return null;
+        }
     }
     
     public static void addToBot(AbstractGameAction action) {

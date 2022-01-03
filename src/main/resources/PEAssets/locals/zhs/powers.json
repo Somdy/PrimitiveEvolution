@@ -117,5 +117,13 @@
             "每当你切换姿态时，抽 #b[amt_0] 张牌 。",
             ""
         ]
+    },
+
+    "prevolution:PreparationReturn": {
+        "NAME": "事先准备",
+        "DESCRIPTIONS": [
+            "回合结束时，如果 #y[crt_0] 在弃牌堆或抽牌堆中，将其移至手牌。",
+            ""
+        ]
     }
 }

@@ -1,17 +1,13 @@
 package rs.primitiveevolution.cards.silent;
 
-import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.unique.FlechetteAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.green.DaggerThrow;
 import com.megacrit.cardcrawl.cards.green.Flechettes;
-import com.megacrit.cardcrawl.cards.green.Tactician;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -23,7 +19,6 @@ import org.jetbrains.annotations.NotNull;
 import rs.lazymankits.actions.CustomDmgInfo;
 import rs.lazymankits.actions.DamageSource;
 import rs.lazymankits.actions.common.CardAboveCreatureAction;
-import rs.lazymankits.actions.common.DrawExptCardAction;
 import rs.lazymankits.actions.common.NullableSrcDamageAction;
 import rs.lazymankits.actions.utility.DamageCallbackBuilder;
 import rs.lazymankits.actions.utility.QuickAction;
@@ -135,7 +130,7 @@ public class FlechettesEvo extends Evolution {
                                 }
                             }
                         });
-                        _inst.rawDescription = ((EvolvableCard) _inst).getEvovledText(ToxicDarts);
+                        _inst.rawDescription = ((EvolvableCard) _inst).getEvolvedText(ToxicDarts);
                         _inst.initializeDescription();
                         return SpireReturn.Return(null);
                     case ThrowingDarts:
@@ -148,7 +143,7 @@ public class FlechettesEvo extends Evolution {
                                 }
                             }
                         }));
-                        _inst.rawDescription = ((EvolvableCard) _inst).getEvovledText(ThrowingDarts);
+                        _inst.rawDescription = ((EvolvableCard) _inst).getEvolvedText(ThrowingDarts);
                         _inst.initializeDescription();
                         return SpireReturn.Return(null);
                 }
@@ -177,7 +172,7 @@ public class FlechettesEvo extends Evolution {
                     && !BranchableUpgradePatch.OptFields.SelectingBranch.get(AbstractDungeon.gridSelectScreen)
                     && !HandCardSelectFixPatch.HandOptFields.SelectingBranch.get(AbstractDungeon.handCardSelectScreen)) {
                 if (((EvolvableCard) _inst).evolanch() != ConcealedDarts && ((EvolvableCard) _inst).evolanch() != 0) {
-                    _inst.rawDescription = ((EvolvableCard) _inst).getEvovledText(((EvolvableCard) _inst).evolanch());
+                    _inst.rawDescription = ((EvolvableCard) _inst).getEvolvedText(((EvolvableCard) _inst).evolanch());
                 }
             }
             return SpireReturn.Continue();
@@ -189,7 +184,7 @@ public class FlechettesEvo extends Evolution {
         @SpirePostfixPatch
         public static void Postfix(Flechettes _inst) {
             if (_inst instanceof EvolvableCard && _inst.upgraded) {
-                _inst.rawDescription = ((EvolvableCard) _inst).getEvovledText(((EvolvableCard) _inst).evolanch());
+                _inst.rawDescription = ((EvolvableCard) _inst).getEvolvedText(((EvolvableCard) _inst).evolanch());
                 _inst.initializeDescription();
             }
         }

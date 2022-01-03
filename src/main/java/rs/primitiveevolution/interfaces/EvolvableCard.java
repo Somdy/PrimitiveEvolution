@@ -8,7 +8,7 @@ import rs.primitiveevolution.datas.DataPool;
 public interface EvolvableCard extends BranchableUpgradeCard {
     int evolanch();
     
-    default String getEvovledName(int branchID) {
+    default String getEvolvedName(int branchID) {
         if (this instanceof AbstractCard) {
             switch (((AbstractCard) this).color) {
                 case RED:
@@ -29,7 +29,7 @@ public interface EvolvableCard extends BranchableUpgradeCard {
         }
     }
     
-    default String getEvovledText(int branchID) {
+    default String getEvolvedText(int branchID) {
         if (this instanceof AbstractCard) {
             switch (((AbstractCard) this).color) {
                 case RED:
@@ -42,6 +42,27 @@ public interface EvolvableCard extends BranchableUpgradeCard {
                     return DataPool.WATCHERS.getData(branchID).getText();
                 case COLORLESS:
                     return DataPool.COLORLESS.getData(branchID).getText();
+                default:
+                    return null;
+            }
+        } else {
+            throw new NotImplementedException("Not a evolvable card");
+        }
+    }
+    
+    default String getEvolvedMsg(int branchID, int slot) {
+        if (this instanceof AbstractCard) {
+            switch (((AbstractCard) this).color) {
+                case RED:
+                    return DataPool.IRONCLADS.getData(branchID).getMsg(slot);
+                case GREEN:
+                    return DataPool.SILENTS.getData(branchID).getMsg(slot);
+                case BLUE:
+                    return DataPool.DEFECTS.getData(branchID).getMsg(slot);
+                case PURPLE:
+                    return DataPool.WATCHERS.getData(branchID).getMsg(slot);
+                case COLORLESS:
+                    return DataPool.COLORLESS.getData(branchID).getMsg(slot);
                 default:
                     return null;
             }
