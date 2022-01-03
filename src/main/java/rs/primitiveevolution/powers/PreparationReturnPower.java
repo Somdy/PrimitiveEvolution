@@ -14,13 +14,14 @@ public class PreparationReturnPower extends AbstractEvolutionPower {
     public PreparationReturnPower(AbstractCard cardToReturn) {
         super(POWER_ID, null, PowerType.BUFF, LMSK.Player());
         this.cardToReturn = cardToReturn;
+        ID += cardToReturn.uuid;
         setValues(-1);
         updateDescription();
         loadRegion("rebound");
     }
-
+    
     @Override
-    public void atEndOfTurn(boolean isPlayer) {
+    public void atStartOfTurn() {
         addToBot(new RemoveSpecificPowerAction(owner, owner, this));
         if (cpr().discardPile.group.stream().anyMatch(c -> c == cardToReturn)) {
             flash();
@@ -30,7 +31,7 @@ public class PreparationReturnPower extends AbstractEvolutionPower {
             addToBot(new QuickAction(() -> cpr().drawPile.moveToHand(cardToReturn)));
         }
     }
-
+    
     @Override
     public String preSetDescription() {
         setCrtName(0, cardToReturn.name);

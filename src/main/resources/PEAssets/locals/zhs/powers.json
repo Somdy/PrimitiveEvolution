@@ -122,7 +122,16 @@
     "prevolution:PreparationReturn": {
         "NAME": "事先准备",
         "DESCRIPTIONS": [
-            "回合结束时，如果 #y[crt_0] 在弃牌堆或抽牌堆中，将其移至手牌。",
+            "下回合开始时，如果 #y[crt_0] 在弃牌堆或抽牌堆中，将其移至手牌。",
+            ""
+        ]
+    },
+
+    "prevolution:Protection": {
+        "NAME": "防护",
+        "DESCRIPTIONS": [
+            "[owner_name] 受到的攻击伤害减少 #b[amt_0] 点。",
+            "本回合内，",
             ""
         ]
     }

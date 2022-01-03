@@ -14,6 +14,7 @@ public class BoomerangReturnPower extends AbstractEvolutionPower {
     public BoomerangReturnPower(AbstractCard boomerang) {
         super(POWER_ID, null, PowerType.BUFF, LMSK.Player());
         this.boomerang = boomerang;
+        ID += boomerang.uuid;
         setValues(-1);
         updateDescription();
         loadRegion("rebound");

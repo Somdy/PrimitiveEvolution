@@ -62,9 +62,9 @@
         </SData>
         <SData branch = "143">
             <name>未雨绸缪</name>
-            <description>丢弃 !M! 张手牌。 NL 回合结束时，将第一张被选中的牌从弃牌堆或抽牌堆移至手牌。</description>
+            <description>丢弃 !M! 张手牌。 NL 下回合开始时，将第一张被选中的牌从弃牌堆或抽牌堆移至手牌。</description>
             <msg>
-                <i>丢弃。第一张牌在回合结束时会从弃牌堆或抽牌堆移至手牌。</i>
+                <i>丢弃。第一张牌在下回合开始时会从弃牌堆或抽牌堆移至手牌。</i>
             </msg>
         </SData>
         <SData branch = "144">

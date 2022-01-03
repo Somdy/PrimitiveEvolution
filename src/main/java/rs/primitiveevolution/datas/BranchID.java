@@ -154,4 +154,6 @@ public final class BranchID {
     // 1-3
     public static final int WellPrepared = 142;
     public static final int VisionPreparation = 143;
+    public static final int Defend_G_1 = 144;
+    public static final int Defend_G_2 = 145;
 }
