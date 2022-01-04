@@ -65,5 +65,21 @@
             <name>切开</name>
             <description>造成 !D! 点伤害。 NL lmkmod:突破 时，选择将1张手牌的所有可变面板属性增加等同于 *突破 量的点数。</description>
         </SData>
+        <SData branch = "146">
+            <name>万刃齐发</name>
+            <description>造成 !D! 点伤害。 NL 丢弃手牌中所有耗能大于0的攻击牌，每张对目标额外造成一次 !M! 点伤害。</description>
+        </SData>
+        <SData branch = "147">
+            <name>精准一掷</name>
+            <description>造成 !D! 点伤害。 NL 目标生命值越少，造成的伤害越多。</description>
+        </SData>
+        <SData branch = "148">
+            <name>佯装打击</name>
+            <description>造成 !D! 点伤害。 NL 从手牌丢弃时，对随机敌人打出。</description>
+        </SData>
+        <SData branch = "149">
+            <name>备用打击</name>
+            <description>造成 !D! 点伤害。 NL 从卡组中移除时，选择升级卡组中1张牌。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

@@ -4,8 +4,11 @@ import basemod.BaseMod;
 import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.PostUpdateSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import org.jetbrains.annotations.Contract;
@@ -17,12 +20,17 @@ import rs.primitiveevolution.cards.Evolution;
 import rs.primitiveevolution.datas.DataPool;
 import rs.primitiveevolution.utils.EvoImageMst;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @SpireInitializer
-public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, EditStringsSubscriber, EditKeywordsSubscriber {
+public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, 
+        PostUpdateSubscriber {
     public static final String MODID = "prevolution";
+    
+    private static List<AbstractGameAction> actions = new ArrayList<>();
     
     public static void initialize() {
         new Nature();
@@ -77,5 +85,26 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
                 map.put(Evolution.GetEvoKeyword(), "This card has different upgrade branches.");
         }
         map.forEach((k, v) -> BaseMod.addKeyword(new String[]{k}, v));
+    }
+    
+    public static void AddToBot(AbstractGameAction action) {
+        actions.add(action);
+    }
+    
+    public static void AddToTop(AbstractGameAction action) {
+        actions.add(0, action);
+    }
+    
+    @Override
+    public void receivePostUpdate() {
+        if (actions.size() > 0) {
+            if (!AbstractDungeon.isScreenUp) {
+                actions.get(0).update();
+            }
+            if (actions.get(0).isDone) {
+                Log("Removing finished action: " + actions.get(0).getClass().getSimpleName());
+                actions.remove(0);
+            }
+        }
     }
 }

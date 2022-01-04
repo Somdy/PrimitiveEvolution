@@ -53,6 +53,7 @@
             <name>瞻前顾后</name>
             <description>丢弃 !M! 张手牌。 NL 你当前手牌本回合耗能减少1点。</description>
         </SData>
+        <!--1/3-->
         <SData branch = "142">
             <name>准备妥善</name>
             <description>丢弃至多 !M! 张手牌，每张抽1张与其类型相同的其他牌。</description>
