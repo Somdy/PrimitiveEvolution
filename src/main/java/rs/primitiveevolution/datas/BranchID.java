@@ -160,4 +160,11 @@ public final class BranchID {
     public static final int Unload_2 = 147;
     public static final int Strike_G_1 = 148;
     public static final int Strike_G_2 = 149;
+    // 1-14
+    public static final int EmptyMind_Light = 150;
+    public static final int EmptyMind_Smooth = 151;
+    public static final int Conclude_Catastrophe = 152;
+    public static final int Conclude_Demise = 153;
+    public static final int FearNoEvil_Penetrate = 154;
+    public static final int FearNoEvil_Hunt = 155;
 }
