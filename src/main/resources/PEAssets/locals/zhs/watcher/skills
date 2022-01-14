@@ -71,5 +71,14 @@
             <name>关键化体</name>
             <description>保留 。 NL 获得 !B! 点 格挡 。 NL 退出当前 姿态 。</description>
         </SData>
+        <!--01/14!-->
+        <SData branch = "150">
+            <name>轻灵化智</name>
+            <description>抽 !M! 张牌。 NL 退出当前 姿态 。</description>
+        </SData>
+        <SData branch = "151">
+            <name>洞见化智</name>
+            <description>抽 !M! 张牌。 NL 退出当前 姿态 。 NL 将一张 *洞见 加入抽牌堆。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>
