@@ -80,7 +80,7 @@ public class SurvivorEvo extends Evolution {
     public static class Upgrade {
         @SpirePrefixPatch
         public static SpireReturn Prefix(Survivor _inst) {
-            if (_inst instanceof EvolvableCard && !_inst.upgraded) {
+            if (_inst instanceof EvolvableCard && ((EvolvableCard) _inst).canBranch() && !_inst.upgraded) {
                 ((EvolvableCard) _inst).possibleBranches().get(((EvolvableCard) _inst).chosenBranch()).upgrade();
                 return SpireReturn.Return(null);
             }

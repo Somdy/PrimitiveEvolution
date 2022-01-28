@@ -89,7 +89,7 @@ public class StrikeGEvo extends Evolution {
     public static class Upgrade {
         @SpirePrefixPatch
         public static SpireReturn Prefix(AbstractCard _inst) {
-            if (_inst instanceof EvolvableCard && !_inst.upgraded) {
+            if (_inst instanceof EvolvableCard && ((EvolvableCard) _inst).canBranch() && !_inst.upgraded) {
                 ((EvolvableCard) _inst).possibleBranches().get(((EvolvableCard) _inst).chosenBranch()).upgrade();
                 return SpireReturn.Return(null);
             }
@@ -105,7 +105,7 @@ public class StrikeGEvo extends Evolution {
                 switch (((EvolvableCard) _inst).evolanch()) {
                     case Strike_G_1:
                         addToBot(new NullableSrcDamageAction(m, new CustomDmgInfo(new DamageSource(p, _inst),
-                                _inst.damage, _inst.damageTypeForTurn), _inst.isInAutoplay ? SLASH_DIAGONAL : SLASH_HORIZONTAL));
+                                _inst.damage, _inst.damageTypeForTurn), SLASH_DIAGONAL));
                         return SpireReturn.Return(null);
                     case Strike_G_2:
                         addToBot(new NullableSrcDamageAction(m, new CustomDmgInfo(new DamageSource(p, _inst),
@@ -142,8 +142,11 @@ public class StrikeGEvo extends Evolution {
         return false;
     }
     
-    public static void TriggerDiscardEffect(AbstractCard card) {
-        addToBot(new NewQueueCardAction(card, true, true, true));
+    public static void TriggerDiscardEffect(AbstractCard _inst) {
+        AbstractMonster m = AbstractDungeon.getRandomMonster();
+        AbstractPlayer p = AbstractDungeon.player;
+        addToBot(new NullableSrcDamageAction(m, new CustomDmgInfo(new DamageSource(p, _inst),
+                _inst.damage, _inst.damageTypeForTurn), SLASH_HORIZONTAL));
     }
     
     public static boolean CanTriggerOnRemoval(AbstractCard card) {

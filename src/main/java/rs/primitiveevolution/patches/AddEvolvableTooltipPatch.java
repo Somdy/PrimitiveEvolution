@@ -10,7 +10,7 @@ import rs.primitiveevolution.interfaces.EvolvableCard;
 public class AddEvolvableTooltipPatch {
     @SpireInsertPatch(rloc = 1)
     public static void Insert(AbstractCard _inst) {
-        if (_inst instanceof EvolvableCard && !_inst.upgraded) {
+        if (_inst instanceof EvolvableCard && ((EvolvableCard) _inst).canBranch() && !_inst.upgraded) {
             _inst.keywords.add(Evolution.GetEvoKeyword());
         }
     }

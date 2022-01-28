@@ -24,6 +24,9 @@ import com.megacrit.cardcrawl.vfx.combat.AnimatedSlashEffect;
 import javassist.CtBehavior;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
+import rs.lazymankits.actions.CustomDmgInfo;
+import rs.lazymankits.actions.DamageSource;
+import rs.lazymankits.actions.utility.DamageCallbackBuilder;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import rs.primitiveevolution.Nature;
 import rs.primitiveevolution.actions.unique.FlyingSleeves_PressurePoint_Action;
@@ -65,6 +68,7 @@ public class FlyingSleevesEvo extends Evolution {
                 upgradeEvolvedTexts(card, FlyingSleeves_Melter);
             });
             add(() -> {
+                setDamage(card, 3);
                 upgradeEvolvedTexts(card, FlyingSleeves_PressurePoint);
             });
         }};
@@ -88,7 +92,7 @@ public class FlyingSleevesEvo extends Evolution {
     public static class Upgrade {
         @SpirePrefixPatch
         public static SpireReturn Prefix(AbstractCard _inst) {
-            if (_inst instanceof EvolvableCard && !_inst.upgraded) {
+            if (_inst instanceof EvolvableCard && ((EvolvableCard) _inst).canBranch() && !_inst.upgraded) {
                 ((EvolvableCard) _inst).possibleBranches().get(((EvolvableCard) _inst).chosenBranch()).upgrade();
                 return SpireReturn.Return(null);
             }
@@ -124,8 +128,30 @@ public class FlyingSleevesEvo extends Evolution {
                                 AbstractGameAction.AttackEffect.NONE));
                         return SpireReturn.Return(null);
                     case FlyingSleeves_PressurePoint:
-                        addToBot(new FlyingSleeves_PressurePoint_Action(m,
-                                new DamageInfo(p, _inst.damage, _inst.damageTypeForTurn)));
+//                        addToBot(new FlyingSleeves_PressurePoint_Action(m,
+//                                new DamageInfo(p, _inst.damage, _inst.damageTypeForTurn)));
+                        if (m != null) {
+                            addToBot(new SFXAction("ATTACK_WHIFF_2", 0.3F));
+                            addToBot(new SFXAction("ATTACK_FAST", 0.2F));
+                            addToBot(new VFXAction(new AnimatedSlashEffect(m.hb.cX, m.hb.cY - 30.0F * Settings.scale,
+                                    500.0F, 200.0F, 290.0F, 3.0F, Color.VIOLET, Color.PINK)));
+                            addToBot(new DamageCallbackBuilder(m, new CustomDmgInfo(new DamageSource(p, _inst), _inst.damage, 
+                                    _inst.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE, c -> {
+                                if (c.lastDamageTaken > 0) {
+                                    addToTop(new ApplyPowerAction(c, p, new MarkPower(c, c.lastDamageTaken)));
+                                }
+                            }));
+                            addToBot(new SFXAction("ATTACK_WHIFF_1", 0.2F));
+                            addToBot(new SFXAction("ATTACK_FAST", 0.2F));
+                            addToBot(new VFXAction(new AnimatedSlashEffect(m.hb.cX, m.hb.cY - 30.0F * Settings.scale,
+                                    500.0F, -200.0F, 250.0F, 3.0F, Color.VIOLET, Color.PINK)));
+                            addToBot(new DamageCallbackBuilder(m, new CustomDmgInfo(new DamageSource(p, _inst), _inst.damage,
+                                    _inst.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE, c -> {
+                                if (c.lastDamageTaken > 0) {
+                                    addToTop(new ApplyPowerAction(c, p, new MarkPower(c, c.lastDamageTaken)));
+                                }
+                            }));
+                        }
                         addToBot(new TriggerMarksAction(_inst));
                         return SpireReturn.Return(null);
                 }

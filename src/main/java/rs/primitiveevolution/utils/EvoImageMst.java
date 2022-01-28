@@ -11,6 +11,7 @@ public class EvoImageMst {
     public static Texture[] Frost_VFX;
     public static Texture Dark;
     public static Texture Dark_Evoke;
+    public static Texture Badge;
     
     public static void Initialize() {
         Lightning = ImageMaster.loadImage("PEAssets/images/orbs/lightning_overloaded.png");
@@ -23,5 +24,6 @@ public class EvoImageMst {
         Frost_VFX[2] = ImageMaster.loadImage("PEAssets/images/orbs/f3.png");
         Dark = ImageMaster.loadImage("PEAssets/images/orbs/dark.png");
         Dark_Evoke = ImageMaster.loadImage("PEAssets/images/orbs/darkEvoke2.png");
+        Badge = ImageMaster.loadImage("PEAssets/images/badge.png");
     }
 }

@@ -1,14 +1,19 @@
 package rs.primitiveevolution;
 
 import basemod.BaseMod;
+import basemod.ModLabeledToggleButton;
+import basemod.ModPanel;
 import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import basemod.interfaces.PostUpdateSubscriber;
+import com.badlogic.gdx.graphics.Color;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import org.jetbrains.annotations.Contract;
@@ -20,15 +25,16 @@ import rs.primitiveevolution.cards.Evolution;
 import rs.primitiveevolution.datas.DataPool;
 import rs.primitiveevolution.utils.EvoImageMst;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @SpireInitializer
 public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, 
         PostUpdateSubscriber {
     public static final String MODID = "prevolution";
+    public static final String MODNAME = "Primitive Evolution";
+    public static final String[] AUTHORS = {"Somdy", "Carcinogen"};
+    public static final String DESCRIPTION = "提供部分原版卡牌不同的升级路线。";
+    public static boolean ALLOW_BRANCHES;
     
     private static List<AbstractGameAction> actions = new ArrayList<>();
     
@@ -38,6 +44,26 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
     
     public Nature() {
         BaseMod.subscribe(this);
+        ALLOW_BRANCHES = true;
+        SpireConfig config = MakeConfig();
+        LoadConfig(config);
+    }
+    
+    public static SpireConfig MakeConfig() {
+        Properties defaults = new Properties();
+        defaults.setProperty("ALLOW_BRANCHES", Boolean.toString(true));
+        try {
+            SpireConfig config = new SpireConfig("PrimitiveEvolution", "PEConfig", defaults);
+            return config;
+        } catch (Exception e) {
+            return null;
+        }
+    }
+    
+    public static void LoadConfig(SpireConfig config) {
+        if (config != null) {
+            ALLOW_BRANCHES = config.getBool("ALLOW_BRANCHES");
+        }
     }
     
     @NotNull
@@ -55,6 +81,27 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
         DataPool.Initialize();
         Evolution.Initialize();
         EvoImageMst.Initialize();
+        
+        makeModPanels();
+    }
+    
+    private static void makeModPanels() {
+        ModPanel settings = new ModPanel();
+        ModLabeledToggleButton ALLOW_BRANCHES_BTN = new ModLabeledToggleButton("启用分支升级(Enable upgrade branches)",
+                350F, 700F, Color.WHITE.cpy(), FontHelper.charDescFont, ALLOW_BRANCHES, settings, (l) -> {},
+                (btn) -> {
+            ALLOW_BRANCHES = btn.enabled;
+            try {
+                SpireConfig config = MakeConfig();
+                config.setBool("ALLOW_BRANCHES", ALLOW_BRANCHES);
+                config.save();
+            } catch (Exception e) {
+                Log("Failed to initialize PE panel");
+                e.printStackTrace();
+            }
+                });
+        settings.addUIElement(ALLOW_BRANCHES_BTN);
+        BaseMod.registerModBadge(EvoImageMst.Badge, MODNAME, Arrays.toString(AUTHORS), DESCRIPTION, settings);
     }
 
     @Override

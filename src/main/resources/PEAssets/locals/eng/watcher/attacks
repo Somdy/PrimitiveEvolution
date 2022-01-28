@@ -155,5 +155,30 @@
             <name>Chaotic Blows</name>
             <description>Deal !D! damage. Increase its damage by !M! for the rest of the combat. NL Whenever you change Stances, return it to hand from discard pile.</description>
         </SData>
+        <!--01/14!-->
+        <SData branch = "152">
+<!--            <name>灾厄</name>-->
+<!--            <description> 固有 。 NL 对全体敌人造成 !D! 点 伤害，结束你的回合。</description>-->
+            <name>Bane</name>
+            <description>Innate. NL Deal !D! damage to ALL enemies. NL End your turn.</description>
+        </SData>
+        <SData branch = "153">
+<!--            <name>终焉</name>-->
+<!--            <description>对全体敌人造成 !D! 点 伤害，结束你的回合。 NL 消耗 。</description>-->
+            <name>Ending</name>
+            <description>Deal !D! damage to ALL enemies. NL End your turn. NL Exhaust.</description>
+        </SData>
+        <SData branch = "154">
+<!--            <name>火眼金睛</name>-->
+<!--            <description>造成 !D! 点 伤害。 NL 若敌人的意图是强化或施加负面状态，获得2点力量和敏捷。</description>-->
+            <name>Sharp Sighted</name>
+            <description>Deal !D! damage. NL If the enemy intends to buff or apply negative buff, gain 2 Strength and Dexterity.</description>
+        </SData>
+        <SData branch = "155">
+<!--            <name>乘虚而入</name>-->
+<!--            <description>造成 !D! 点 伤害。 NL 若敌人的意图不是攻击，再造成 !D! 点伤害。</description>-->
+            <name>Swoop</name>
+            <description>Deal !D! damage. NL If the enemy intends not to attack, deal !D! damage again.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

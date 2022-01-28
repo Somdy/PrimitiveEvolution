@@ -65,5 +65,29 @@
             <name>Incise</name>
             <description>Deal !D! damage. NL Whenever the target's *unblocked , choose 1 card in hand and increase its ALL modifiable properties by the same amount.</description>
         </SData>
+        <SData branch = "146">
+<!--            <name>万刃齐发</name>-->
+<!--            <description>造成 !D! 点伤害。 NL 丢弃手牌中所有耗能大于0的攻击牌，每张对目标额外造成一次 !M! 点伤害。</description>-->
+            <name>Blades Out</name>
+            <description>Deal !D! damage. NL Discard ALL Attacks in hand that costs more than 0. NL Deal !M! additional damage for each discarded card.</description>
+        </SData>
+        <SData branch = "147">
+<!--            <name>精准一掷</name>-->
+<!--            <description>造成 !D! 点伤害。 NL 目标生命值越少，造成的伤害越多。</description>-->
+            <name>Precisely Throw</name>
+            <description>Deal !D! damage. NL The less HP the target has, the more damage this deals.</description>
+        </SData>
+        <SData branch = "148">
+<!--            <name>佯装打击</name>-->
+<!--            <description>造成 !D! 点伤害。 NL 从手牌丢弃时，对随机敌人造成 !D! 点伤害。</description>-->
+            <name>Feint Strike</name>
+            <description>Deal !D! damage. NL When discarded from hand, deal !D! damage to a random enemy.</description>
+        </SData>
+        <SData branch = "149">
+<!--            <name>备用打击</name>-->
+<!--            <description>造成 !D! 点伤害。 NL 从卡组中移除时，选择升级卡组中1张牌。</description>-->
+            <name>Backup Strike</name>
+            <description>Deal !D! damage. NL Choose a card in deck to upgrade when removing this from deck.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

@@ -71,7 +71,7 @@ public class ApotheosisEvo extends Evolution {
     public static class Upgrade {
         @SpirePrefixPatch
         public static SpireReturn Prefix(AbstractCard _inst) {
-            if (_inst instanceof EvolvableCard && !_inst.upgraded) {
+            if (_inst instanceof EvolvableCard && ((EvolvableCard) _inst).canBranch() && !_inst.upgraded) {
                 ((EvolvableCard) _inst).possibleBranches().get(((EvolvableCard) _inst).chosenBranch()).upgrade();
                 return SpireReturn.Return();
             }
@@ -101,7 +101,7 @@ public class ApotheosisEvo extends Evolution {
         private static void upgradeAllCardsIn(CardGroup group) {
             for (AbstractCard card : group.group) {
                 if (card.canUpgrade()) {
-                    if (card instanceof EvolvableCard) {
+                    if (card instanceof EvolvableCard && ((EvolvableCard) card).canBranch()) {
                         int max = ((EvolvableCard) card).possibleBranches().size() - 1;
                         int branch = LMSK.CardRandomRng().random(0, max);
                         ((EvolvableCard) card).setChosenBranch(branch);

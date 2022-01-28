@@ -3,10 +3,16 @@ package rs.primitiveevolution.interfaces;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import org.apache.commons.lang3.NotImplementedException;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
+import rs.primitiveevolution.Nature;
 import rs.primitiveevolution.datas.DataPool;
 
 public interface EvolvableCard extends BranchableUpgradeCard {
     int evolanch();
+    
+    @Override
+    default boolean canBranch() {
+        return BranchableUpgradeCard.super.canBranch() && Nature.ALLOW_BRANCHES;
+    }
     
     default String getEvolvedName(int branchID) {
         if (this instanceof AbstractCard) {

@@ -75,7 +75,7 @@
         </SData>
         <SData branch = "148">
             <name>佯装打击</name>
-            <description>造成 !D! 点伤害。 NL 从手牌丢弃时，对随机敌人打出。</description>
+            <description>造成 !D! 点伤害。 NL 从手牌丢弃时，对随机敌人造成 !D! 点伤害。</description>
         </SData>
         <SData branch = "149">
             <name>备用打击</name>

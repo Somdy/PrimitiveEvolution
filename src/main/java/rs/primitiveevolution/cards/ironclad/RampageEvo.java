@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.red.Rampage;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.helpers.GetAllInBattleInstances;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import javassist.CtBehavior;
 import org.jetbrains.annotations.Contract;
@@ -16,6 +17,7 @@ import rs.lazymankits.actions.CustomDmgInfo;
 import rs.lazymankits.actions.DamageSource;
 import rs.lazymankits.actions.common.DrawExptCardAction;
 import rs.lazymankits.actions.common.NullableSrcDamageAction;
+import rs.lazymankits.actions.utility.QuickAction;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import rs.primitiveevolution.Nature;
 import rs.primitiveevolution.cards.Evolution;
@@ -65,7 +67,7 @@ public class RampageEvo extends Evolution {
                 upgradeEvolvedTexts(card, Thumps);
                 setDamage(card, 5);
                 setBaseCost(card, 2);
-                setMagic(card, 0);
+                setMagic(card, 3);
             });
         }};
     }
@@ -88,7 +90,7 @@ public class RampageEvo extends Evolution {
     public static class Upgrade {
         @SpirePrefixPatch
         public static SpireReturn Prefix(AbstractCard _inst) {
-            if (_inst instanceof EvolvableCard && !_inst.upgraded) {
+            if (_inst instanceof EvolvableCard && ((EvolvableCard) _inst).canBranch() && !_inst.upgraded) {
                 ((EvolvableCard) _inst).possibleBranches().get(((EvolvableCard) _inst).chosenBranch()).upgrade();
                 return SpireReturn.Return(null);
             }
@@ -118,10 +120,17 @@ public class RampageEvo extends Evolution {
                                 && c.costForTurn == 1));
                         return SpireReturn.Return(null);
                     case Thumps:
-                        for (int i = 0; i < _inst.damage; i++) {
+                        for (int i = 0; i < _inst.magicNumber; i++) {
                             addToBot(new NullableSrcDamageAction(m, new CustomDmgInfo(new DamageSource(p, _inst), _inst.damage,
                                     _inst.damageTypeForTurn), SLASH_DIAGONAL));
                         }
+                        addToBot(new QuickAction(() -> {
+                            for (AbstractCard card : GetAllInBattleInstances.get(_inst.uuid)) {
+                                card.baseMagicNumber += 1;
+                                card.magicNumber = card.baseMagicNumber;
+                                card.applyPowers();
+                            }
+                        }));
                         return SpireReturn.Return(null);
                 }
             }
