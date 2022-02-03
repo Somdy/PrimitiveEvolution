@@ -53,5 +53,42 @@
             <name>Indecisive</name>
             <description>Discard !M! cards. NL ALL your hand cost 1 less this turn.</description>
         </SData>
+        <!--1/3-->
+        <SData branch = "142">
+<!--            <name>准备妥善</name>-->
+<!--            <description>丢弃至多 !M! 张手牌，每张抽1张与其类型相同的其他牌。</description>-->
+<!--            <msg>-->
+<!--                <i>丢弃，每张抽于其类型相同的其他牌。</i>-->
+<!--            </msg>-->
+            <name>Well Prepared</name>
+            <description>Discard up to !M! cards in hand. NL Draw a card of the same type for each discarded card.</description>
+            <msg>
+                <i>discard and draw a card of the same type</i>
+            </msg>
+        </SData>
+        <SData branch = "143">
+<!--            <name>未雨绸缪</name>-->
+<!--            <description>丢弃 !M! 张手牌。 NL 下回合开始时，将第一张被选中的牌从弃牌堆或抽牌堆移至手牌。</description>-->
+<!--            <msg>-->
+<!--                <i>丢弃。第一张牌在下回合开始时会从弃牌堆或抽牌堆移至手牌。</i>-->
+<!--            </msg>-->
+            <name>Pre-preparation</name>
+            <description>Discard !M! cards in hand. NL Return the first card discarded to hand from draw pile or discard pile at the start of next turn.</description>
+            <msg>
+                <i>discard. The first card will be returned to hand in next turn.</i>
+            </msg>
+        </SData>
+        <SData branch = "144">
+<!--            <name>藏匿的盾</name>-->
+<!--            <description>获得 !B! 点 格挡 。 NL 从手牌丢弃时，获得 !M! 点 *多层护甲 。</description>-->
+            <name>Hidden Shields</name>
+            <description>Gain !B! Block. NL When discarded from hand, gain !M! *Plated *Armor .</description>
+        </SData>
+        <SData branch = "145">
+<!--            <name>加护防御</name>-->
+<!--            <description>获得 !B! 点 格挡 。 NL 本回合你受到的攻击伤害减少1点。</description>-->
+            <name>Shields On</name>
+            <description>Gain !B! Block. NL Reduce all attack damage you take by 1 this turn.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

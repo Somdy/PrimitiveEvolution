@@ -101,5 +101,18 @@
             <name>Body Controlling</name>
             <description>Retain. NL Gain !B! Block. NL Exit your Stance.</description>
         </SData>
+        <!--01/14!-->
+        <SData branch = "150">
+<!--            <name>轻灵化智</name>-->
+<!--            <description>抽 !M! 张牌。 NL 退出当前 姿态 。</description>-->
+            <name>Swift Emptiness</name>
+            <description>Draw !M! cards. NL Exit your Stance.</description>
+        </SData>
+        <SData branch = "151">
+<!--            <name>洞见化智</name>-->
+<!--            <description>抽 !M! 张牌。 NL 退出当前 姿态 。 NL 将一张 *洞见 加入抽牌堆。</description>-->
+            <name>Empty Insight</name>
+            <description>Draw !M! cards. NL Exit your Stance. NL Shuffle a *Insight into draw pile.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

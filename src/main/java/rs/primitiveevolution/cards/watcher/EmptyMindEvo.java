@@ -57,6 +57,7 @@ public class EmptyMindEvo extends Evolution {
             add(() -> {
                 upgradeEvolvedTexts(card, EmptyMind_Smooth);
                 setMagic(card, 1);
+                card.cardsToPreview = new Insight();
             });
         }};
     }
