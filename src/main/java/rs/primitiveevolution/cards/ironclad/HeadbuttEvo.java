@@ -67,7 +67,7 @@ public class HeadbuttEvo extends Evolution {
             });
             add(() -> {
                 upgradeEvolvedTexts(card, IronHead);
-                setDamage(card, 10);
+                setDamage(card, 11);
             });
             add(() -> {
                 upgradeEvolvedTexts(card, HeadToHead);
@@ -127,6 +127,7 @@ public class HeadbuttEvo extends Evolution {
                                         .setAmount(1)
                                         .setAnyNumber(false)
                                         .setCanCancel(false)
+                                        .setShouldMatchAll(true)
                                         .setMsg(getGridToHandSelectUI(1, false))
                                         .setCardGroup(p.drawPile)
                                         .setManipulator(new GridCardManipulator() {

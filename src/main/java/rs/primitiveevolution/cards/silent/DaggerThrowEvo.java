@@ -53,7 +53,10 @@ public class DaggerThrowEvo extends Evolution {
                 upgradeName(card);
                 upgradeDamage(card, 3);
             });
-            add(() -> upgradeEvolvedTexts(card, BaitDagger));
+            add(() -> {
+                upgradeEvolvedTexts(card, BaitDagger);
+                setDamage(card, 10);
+            });
             add(() -> {
                 upgradeEvolvedTexts(card, TacticalThrow);
                 setDamage(card, 10);
