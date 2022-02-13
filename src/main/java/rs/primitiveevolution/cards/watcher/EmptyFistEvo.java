@@ -109,7 +109,7 @@ public class EmptyFistEvo extends Evolution {
                         addToBot(new NotStanceCheckAction("Neutral",
                                 new VFXAction(new EmptyStanceEffect(p.hb.cX, p.hb.cY), 0.1F)));
                         addToBot(new ChangeStanceAction("Neutral"));
-                        return SpireReturn.Continue();
+                        return SpireReturn.Return();
                 }
             }
             return SpireReturn.Continue();
