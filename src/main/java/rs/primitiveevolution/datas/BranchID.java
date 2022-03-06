@@ -167,4 +167,11 @@ public final class BranchID {
     public static final int Conclude_Demise = 153;
     public static final int FearNoEvil_Penetrate = 154;
     public static final int FearNoEvil_Hunt = 155;
+    // 3-6
+    public static final int TalkToTheHand_Stack = 156;
+    public static final int TalkToTheHand_PressurePoint = 157;
+    public static final int Wallop_Light = 158;
+    public static final int Wallop_Heavy = 159;
+    public static final int Foresight_Bi = 160;
+    public static final int Foresight_After = 161;
 }
