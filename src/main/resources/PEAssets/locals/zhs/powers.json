@@ -134,5 +134,29 @@
             "本回合内，",
             ""
         ]
+    },
+
+    "prevolution:PressurePointed": {
+        "NAME": "摧肝断肠",
+        "DESCRIPTIONS": [
+            "[owner_name] 受到攻击时，获得 #b[amt_0] 点 #y印记 。",
+            ""
+        ]
+    },
+
+    "prevolution:ForesightBi": {
+        "NAME": "瞻前顾后",
+        "DESCRIPTIONS": [
+            "每回合开始和结束时，预见 #b[amt_0] 。",
+            ""
+        ]
+    },
+
+    "prevolution:ForesightAfter": {
+        "NAME": "事后诸葛",
+        "DESCRIPTIONS": [
+            "每回合结束时，预见 #b[amt_0] 。",
+            ""
+        ]
     }
 }
