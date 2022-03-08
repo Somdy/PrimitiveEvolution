@@ -63,12 +63,12 @@ public class DefendBEvo extends Evolution {
             });
             add(() -> {
                 upgradeEvolvedTexts(card, FocusDefendB);
-                setBlock(card, 1);
+                setBlock(card, 7);
                 setMagic(card, 2);
             });
             add(() -> {
                 upgradeEvolvedTexts(card, ColdDefendB);
-                setBlock(card, 2);
+                setBlock(card, 7);
                 setMagic(card, 2);
             });
         }};

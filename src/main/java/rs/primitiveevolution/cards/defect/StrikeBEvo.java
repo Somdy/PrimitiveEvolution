@@ -59,13 +59,13 @@ public class StrikeBEvo extends Evolution {
             });
             add(() -> {
                 upgradeEvolvedTexts(card, LoadStrikeB);
-                setDamage(card, 2);
+                setDamage(card, 8);
                 setMagic(card, 1);
                 card.exhaust = true;
             });
             add(() -> {
                 upgradeEvolvedTexts(card, ReStrikeB);
-                setDamage(card, 3);
+                setDamage(card, 10);
                 setMagic(card, 1);
             });
         }};
