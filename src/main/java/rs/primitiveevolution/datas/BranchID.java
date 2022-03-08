@@ -174,4 +174,9 @@ public final class BranchID {
     public static final int Wallop_Heavy = 159;
     public static final int Foresight_Bi = 160;
     public static final int Foresight_After = 161;
+    //3-5
+    public static final int LoadStrikeB = 162;
+    public static final int ReStrikeB = 163;
+    public static final int FocusDefendB = 164;
+    public static final int ColdDefendB = 165;
 }

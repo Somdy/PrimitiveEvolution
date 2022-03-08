@@ -62,5 +62,14 @@
             <name>护盾超载</name>
             <description>生成2个数值等同于你当前 格挡 值一半的 prevolution:超载 冰霜 。 NL 消耗 。</description>
         </SData>
+        <!--3月5日更新!-->
+        <SData branch = "164">
+            <name>专注防御</name>
+            <description>获得 !B! 点 格挡 。 NL 获得 !M! 点 集中 1 回合。</description>
+        </SData>
+        <SData branch = "165">
+            <name>冷静防御</name>
+            <description>获得 !B! 点 格挡 。 NL 你所有的 冰霜 充能球主动数值增加 !M! 点。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

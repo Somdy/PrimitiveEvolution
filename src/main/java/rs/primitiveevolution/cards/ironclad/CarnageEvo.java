@@ -149,7 +149,7 @@ public class CarnageEvo extends Evolution {
                                             && c.damage > 0, LMSK.GetALLUnexhaustedCards());
                             int count = Math.min(_inst.magicNumber, cards.size());
                             int totalDamage = 0;
-                            while (count >= 0) {
+                            while (count >= 1) {
                                 Optional<AbstractCard> opt = LMSK.GetRandom(cards, LMSK.CardRandomRng());
                                 if (opt.isPresent()) {
                                     count--;
@@ -158,11 +158,12 @@ public class CarnageEvo extends Evolution {
                                 }
                             }
                             if (totalDamage > 0) {
+                                AbstractMonster mo = AbstractDungeon.getRandomMonster();
                                 addToTop(new NullableSrcDamageAction(AbstractDungeon.getRandomMonster(),
                                         new CustomDmgInfo(new DamageSource(p, _inst), totalDamage, _inst.damageTypeForTurn), BLUNT_HEAVY));
-                                addToTop(new VFXAction(new ViolentAttackEffect(m.hb.cX, m.hb.cY, Color.RED)));
+                                addToTop(new VFXAction(new ViolentAttackEffect(mo.hb.cX, mo.hb.cY, Color.RED)));
                                 for (int i = 0; i < 5; i++)
-                                    addToTop(new VFXAction(new StarBounceEffect(m.hb.cX, m.hb.cY)));
+                                    addToTop(new VFXAction(new StarBounceEffect(mo.hb.cX, mo.hb.cY)));
                             }
                         }));
                         return SpireReturn.Return(null);

@@ -62,5 +62,22 @@
             <name>Overloaded Shields</name>
             <description>Channel 2 prevolution:Overloaded Frost orbs based on half of your current Block. NL Exhaust.</description>
         </SData>
+        <!--3月5日更新!-->
+<!--        <SData branch = "158">-->
+<!--            <name>专注防御</name>-->
+<!--            <description>获得 !B! 点 格挡 。 NL 获得 !M! 点 集中 1 回合。</description>-->
+<!--        </SData>-->
+        <SData branch = "164">
+            <name>Focus And Defend</name>
+            <description>Gain !B! Block. NL Gain !M! Focus for one turn.</description>
+        </SData>
+<!--        <SData branch = "159">-->
+<!--            <name>冷静防御</name>-->
+<!--            <description>获得 !B! 点 格挡 。 NL 你所有的 冰霜 充能球主动数值增加 !M! 点。</description>-->
+<!--        </SData>-->
+        <SData branch = "165">
+            <name>Cold Defend</name>
+            <description>Gain !B! Block. NL Increase ALL your Frost orbs' evoke amount by !M! .</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

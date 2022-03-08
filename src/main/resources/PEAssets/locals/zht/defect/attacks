@@ -21,5 +21,13 @@
             <name>掃蕩雷射</name>
             <description>對所有敵人造成 !D! 點傷害 NL 抽 !M! 張耗能為1的技能牌</description>
         </SData>
+        <SData branch = "162">
+            <name>充能打击</name>
+            <description>造成 !D! 点伤害。 NL 你所有的 闪电 充能球的被动伤害增加 !M! 点。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "163">
+            <name>再打击</name>
+            <description>造成 !D! 点伤害。 NL 获得 !M! 点 力量 。 NL 失去 !M! 点 敏捷 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

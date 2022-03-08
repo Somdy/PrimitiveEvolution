@@ -104,7 +104,7 @@ public class TalkToTheHandEvo extends Evolution {
                         addToBot(new DamageAction(m, new DamageInfo(p, _inst.damage, _inst.damageTypeForTurn),
                                 AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                         addToBot(new ApplyPowerAction(m, p,
-                                new AddPressurePointPower(m, _inst.magicNumber), _inst.magicNumber));
+                                new AddPressurePointPower(m, p, _inst.magicNumber), _inst.magicNumber));
                         return SpireReturn.Return(null);
                 }
             }
