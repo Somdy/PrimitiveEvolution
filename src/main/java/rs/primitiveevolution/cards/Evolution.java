@@ -99,6 +99,15 @@ public abstract class Evolution {
         }
     }
     
+    public static String getChooseUpToCardsUI(int amount) {
+        switch (Lang()) {
+            case ZHS:
+                return TEXT[3] + TEXT[4] + amount + TEXT[5];
+            default:
+                return TEXT[3] + TEXT[4] + amount + TEXT[5];
+        }
+    }
+    
     private static Settings.GameLanguage Lang() {
         switch (Settings.language) {
             case ZHS:

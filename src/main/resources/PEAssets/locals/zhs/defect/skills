@@ -71,5 +71,18 @@
             <name>冷静防御</name>
             <description>获得 !B! 点 格挡 。 NL 你所有的 冰霜 充能球主动数值增加 !M! 点。</description>
         </SData>
+        <!--        <3/26-->
+        <SData branch = "169">
+            <name>预热</name>
+            <description>固有 。 NL 从抽牌堆中抽 !M! 张技能牌。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "170">
+            <name>预加载</name>
+            <description>固有 。 NL 获得 !B! 点 格挡 。 NL 查看抽牌堆底部5张牌，选择最多2张移至抽牌堆顶部。 NL 消耗 。</description>
+        </SData>
+        <SData branch = "171">
+            <name>应急方案</name>
+            <description>抽到时在本场战斗中获得 保留 。 NL 选择打出1张 *搜寻 ， *万物一心 或 *认知偏差 。 NL 消耗 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

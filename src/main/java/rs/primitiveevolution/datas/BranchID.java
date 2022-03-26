@@ -179,4 +179,11 @@ public final class BranchID {
     public static final int ReStrikeB = 163;
     public static final int FocusDefendB = 164;
     public static final int ColdDefendB = 165;
+    //3-26
+    public static final int StaticCharge = 166;
+    public static final int Discharge = 167;
+    public static final int Electrostatic = 168;
+    public static final int PreBoot = 169;
+    public static final int Preload = 170;
+    public static final int EmergencySeq = 171;
 }
