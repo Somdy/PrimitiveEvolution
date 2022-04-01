@@ -186,4 +186,9 @@ public final class BranchID {
     public static final int PreBoot = 169;
     public static final int Preload = 170;
     public static final int EmergencySeq = 171;
+    //4-1
+    public static final int Stacking = 172;
+    public static final int Reflects = 173;
+    public static final int Overloads = 174;
+    public static final int Overdrives = 175;
 }

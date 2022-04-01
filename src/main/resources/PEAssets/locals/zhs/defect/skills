@@ -84,5 +84,25 @@
             <name>应急方案</name>
             <description>抽到时在本场战斗中获得 保留 。 NL 选择打出1张 *搜寻 ， *万物一心 或 *认知偏差 。 NL 消耗 。</description>
         </SData>
+        <!--        <4/1-->
+        <SData branch = "172">
+            <name>栈溢出</name>
+            <description>获得等同于抽牌堆数量的 格挡 。 NL 每当该牌洗回抽牌堆，在本场战斗中给予的 格挡 永久增加2点。</description>
+            <msg>
+                <i>获得等同于抽牌堆数量的 格挡 。 NL 每当该牌洗回抽牌堆，在本场战斗中给予的 格挡 永久增加2点。 NL （获得 !B! 点 格挡 。）</i>
+            </msg>
+        </SData>
+        <SData branch = "173">
+            <name>反射</name>
+            <description>抽 !M! 张非能力牌，获得等同于其耗能2倍的 格挡 。</description>
+        </SData>
+        <SData branch = "174">
+            <name>超负荷</name>
+            <description>抽 !M! 张耗能大于0的牌。 NL 下回合少抽1张牌。</description>
+        </SData>
+        <SData branch = "175">
+            <name>主脑过载</name>
+            <description>对随机目标打出抽牌堆顶端 !M! 张牌。 NL 将 !M! 张 *晕眩 洗入弃牌堆。 NL 消耗 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>
