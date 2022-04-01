@@ -5,5 +5,13 @@
             <name>行云流水</name>
             <description>每当你切换姿态时，抽1张牌。</description>
         </SData>
+        <SData branch = "160">
+            <name>瞻前顾后</name>
+            <description>在你的每回合开始时， 预见 !M! 。 NL 在你的每回合结束时， 预见 !M! 。</description>
+        </SData>
+        <SData branch = "161">
+            <name>事后诸葛</name>
+            <description>在你的每回合结束时， 预见 !M! 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

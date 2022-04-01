@@ -114,5 +114,9 @@
             <name>Empty Insight</name>
             <description>Draw !M! cards. NL Exit your Stance. NL Shuffle a *Insight into draw pile.</description>
         </SData>
+<!--        <SData branch = "150">-->
+<!--            <name>轻灵化智</name>-->
+<!--            <description>抽 !M! 张牌。 NL 退出当前 姿态 。</description>-->
+<!--        </SData>-->
     </BaseTextData>
 </LocalSets>

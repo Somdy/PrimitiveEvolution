@@ -79,5 +79,69 @@
             <name>Cold Defend</name>
             <description>Gain !B! Block. NL Increase ALL your Frost orbs' evoke amount by !M! .</description>
         </SData>
+        <!--        <3/26-->
+<!--        <SData branch = "169">-->
+<!--            <name>预热</name>-->
+<!--            <description>固有 。 NL 从抽牌堆中抽 !M! 张技能牌。 NL 消耗 。</description>-->
+<!--        </SData>-->
+        <SData branch = "169">
+            <name>Preheating</name>
+            <description>Innate. NL Draw !M! Skills from draw pile. NL Exhaust.</description>
+        </SData>
+<!--        <SData branch = "170">-->
+<!--            <name>预加载</name>-->
+<!--            <description>固有 。 NL 获得 !B! 点 格挡 。 NL 查看抽牌堆底部5张牌，选择最多2张移至抽牌堆顶部。 NL 消耗 。</description>-->
+<!--        </SData>-->
+        <SData branch = "170">
+            <name>Preloading</name>
+            <description>Innate. NL Gain !B! Block. NL Look at bottom 5 cards and move up to 2 of them to the top.</description>
+        </SData>
+<!--        <SData branch = "171">-->
+<!--            <name>应急方案</name>-->
+<!--            <description>抽到时在本场战斗中获得 保留 。 NL 选择打出1张 *搜寻 ， *万物一心 或 *认知偏差 。 NL 消耗 。</description>-->
+<!--        </SData>-->
+        <SData branch = "171">
+            <name>Emergency Plan</name>
+            <description>Retain for rest of combat when drawn. NL Play a *Seek , *All *For *One or *Biased *Cognition . NL Exhaust.</description>
+        </SData>
+        <!--        <4/1-->
+<!--        <SData branch = "172">-->
+<!--            <name>栈溢出</name>-->
+<!--            <description>获得等同于抽牌堆数量的 格挡 。 NL 每当该牌洗回抽牌堆，在本场战斗中给予的 格挡 永久增加2点。</description>-->
+<!--            <msg>-->
+<!--                <i>获得等同于抽牌堆数量的 格挡 。 NL 每当该牌洗回抽牌堆，在本场战斗中给予的 格挡 永久增加2点。 NL （获得 !B! 点 格挡 。）</i>-->
+<!--            </msg>-->
+<!--        </SData>-->
+        <SData branch = "172">
+            <name>Overflow</name>
+            <description>Gain Block equal to the amount of cards in draw pile. NL Increase the block this gives by 2 whenever it's shuffled back in draw pile.</description>
+            <msg>
+                <i>Gain Block equal to the amount of cards in draw pile. NL Increase the block this gives by 2 whenever it's shuffled back in draw pile. NL (Gain !B! Block.)</i>
+            </msg>
+        </SData>
+<!--        <SData branch = "173">-->
+<!--            <name>反射</name>-->
+<!--            <description>抽 !M! 张非能力牌，获得等同于其耗能2倍的 格挡 。</description>-->
+<!--        </SData>-->
+        <SData branch = "173">
+            <name>Reflecting</name>
+            <description>Draw !M! non-Power cards and gain Block twice to their costs.</description>
+        </SData>
+<!--        <SData branch = "174">-->
+<!--            <name>超负荷</name>-->
+<!--            <description>抽 !M! 张耗能大于0的牌。 NL 下回合少抽1张牌。</description>-->
+<!--        </SData>-->
+        <SData branch = "174">
+            <name>Overdrives</name>
+            <description>Draw !M! cards that cost over 0. NL Draw 1 less next turn.</description>
+        </SData>
+<!--        <SData branch = "175">-->
+<!--            <name>主脑过载</name>-->
+<!--            <description>对随机目标打出抽牌堆顶端 !M! 张牌。 NL 将 !M! 张 *晕眩 洗入弃牌堆。 NL 消耗 。</description>-->
+<!--        </SData>-->
+        <SData branch = "175">
+            <name>Brain Overloaded</name>
+            <description>Play top !M! cards in draw pile at random targets. NL Shuffle !M! *Dazed into discard pile. NL Exhaust.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

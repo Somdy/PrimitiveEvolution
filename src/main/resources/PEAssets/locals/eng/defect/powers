@@ -26,5 +26,30 @@
             <name>Brick</name>
             <description>Gain 2 Focus for !M! turns. Draw another one Brick.</description>
         </SData>
+        <!--        <3/26-->
+<!--        <SData branch = "166">-->
+<!--            <name>静电充能</name>-->
+<!--            <description>获得X点 集中 X回合。 NL X等同于你卡组中能力牌的数量。</description>-->
+<!--        </SData>-->
+        <SData branch = "166">
+            <name>Static Charge</name>
+            <description>Gain X Focus for X turns where X equals to the amount of Powers in your deck.</description>
+        </SData>
+<!--        <SData branch = "167">-->
+<!--            <name>电能释放</name>-->
+<!--            <description>固有 。 NL 手牌中每有1张技能牌，生成1个 prevolution:超载 闪电 。</description>-->
+<!--        </SData>-->
+        <SData branch = "167">
+            <name>Electronic Discharge</name>
+            <description>Innate. NL Channel an prevolution:Overloaded Lightning for each Skill in hand.</description>
+        </SData>
+<!--        <SData branch = "168">-->
+<!--            <name>静电场</name>-->
+<!--            <description>每当你受到未被格挡的攻击伤害时， 激发 你最前面的充能球然后生成 !M! 个 prevolution:超载 闪电 。</description>-->
+<!--        </SData>-->
+        <SData branch = "168">
+            <name>Electrostatic Field</name>
+            <description>Whenever you receive unblocked attack damage, Evoke your next Orb and then channel !M! prevolution:Overloaded Lightning.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

@@ -180,5 +180,38 @@
             <name>Swoop</name>
             <description>Deal !D! damage. NL If the enemy intends not to attack, deal !D! damage again.</description>
         </SData>
+        <!--01/16!-->
+<!--        <SData branch = "156">-->
+<!--            <name>绵掌</name>-->
+<!--            <description>造成 !D! 点 伤害。 NL 每当目标敌人受到攻击时，你获得 !M! 点格挡。</description>-->
+<!--        </SData>-->
+        <SData branch = "156">
+            <name>Soft Palm</name>
+            <description>Deal !D! damage. NL Gain !M! Block whenever the target receives attacks.</description>
+        </SData>
+<!--        <SData branch = "157">-->
+<!--            <name>七伤拳</name>-->
+<!--            <description>造成 !D! 点 伤害。 NL 每当目标敌人受到攻击时，给予其 !M! 点 *印记 。 NL 消耗 。</description>-->
+<!--        </SData>-->
+        <SData branch = "157">
+            <name>Injury of Blows</name>
+            <description>Deal !D! damage. NL Apply !M! *Marks to the target whenever it receives attacks. NL Exhaust.</description>
+        </SData>
+<!--        <SData branch = "158">-->
+<!--            <name>暮鼓晨钟</name>-->
+<!--            <description>造成 !D! 点 伤害。 NL 获得等于未被格挡伤害值的 *格挡 。</description>-->
+<!--        </SData>-->
+        <SData branch = "158">
+            <name>Drums</name>
+            <description>Deal !D! damage. NL Gain Block equal to unblocked damage dealt.</description>
+        </SData>
+<!--        <SData branch = "159">-->
+<!--            <name>回头是岸</name>-->
+<!--            <description>造成 !D! 点 伤害。 NL 获得等于未被格挡伤害值的 *格挡 。 NL 获得 !M! 点 *残影 。 NL 消耗 。</description>-->
+<!--        </SData>-->
+        <SData branch = "159">
+            <name>Swift Returning</name>
+            <description>Deal !D! damage. NL Gain Block equal to unblocked damage dealt. NL Gain !M! *Blur . NL Exhaust.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

@@ -5,5 +5,21 @@
             <name>Mastery Flowing</name>
             <description>Whenever you change Stances, draw a card.</description>
         </SData>
+<!--        <SData branch = "160">-->
+<!--            <name>瞻前顾后</name>-->
+<!--            <description>在你的每回合开始时， 预见 !M! 。 NL 在你的每回合结束时， 预见 !M! 。</description>-->
+<!--        </SData>-->
+        <SData branch = "160">
+            <name>Think Twice</name>
+            <description>Scry !M! at both the start and the end of your turn</description>
+        </SData>
+<!--        <SData branch = "161">-->
+<!--            <name>事后诸葛</name>-->
+<!--            <description>在你的每回合结束时， 预见 !M! 。</description>-->
+<!--        </SData>-->
+        <SData branch = "161">
+            <name>Hindsight</name>
+            <description>Scry !M! at the end of your turn.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>
