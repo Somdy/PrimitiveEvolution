@@ -35,6 +35,7 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
     public static final String[] AUTHORS = {"Somdy", "Carcinogen"};
     public static final String DESCRIPTION = "提供部分原版卡牌不同的升级路线。";
     public static boolean ALLOW_BRANCHES;
+    public static boolean EVOLVE_ICON_ON;
     
     private static List<AbstractGameAction> actions = new ArrayList<>();
     
@@ -45,6 +46,7 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
     public Nature() {
         BaseMod.subscribe(this);
         ALLOW_BRANCHES = true;
+        EVOLVE_ICON_ON = true;
         SpireConfig config = MakeConfig();
         LoadConfig(config);
     }
@@ -52,6 +54,7 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
     public static SpireConfig MakeConfig() {
         Properties defaults = new Properties();
         defaults.setProperty("ALLOW_BRANCHES", Boolean.toString(true));
+        defaults.setProperty("EVOLVE_ICON_ON", Boolean.toString(true));
         try {
             SpireConfig config = new SpireConfig("PrimitiveEvolution", "PEConfig", defaults);
             return config;
@@ -63,6 +66,7 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
     public static void LoadConfig(SpireConfig config) {
         if (config != null) {
             ALLOW_BRANCHES = config.getBool("ALLOW_BRANCHES");
+            EVOLVE_ICON_ON = config.getBool("EVOLVE_ICON_ON");
         }
     }
     
@@ -93,6 +97,7 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
             ALLOW_BRANCHES = btn.enabled;
             try {
                 SpireConfig config = MakeConfig();
+                assert config != null;
                 config.setBool("ALLOW_BRANCHES", ALLOW_BRANCHES);
                 config.save();
             } catch (Exception e) {
@@ -100,7 +105,22 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
                 e.printStackTrace();
             }
                 });
+        ModLabeledToggleButton EVOLVE_ICON_BTN = new ModLabeledToggleButton("启用可进化图标(Enable evolution icon)",
+                350F, 660F, Color.WHITE.cpy(), FontHelper.charDescFont, EVOLVE_ICON_ON, settings, (l) -> {},
+                (btn) -> {
+            EVOLVE_ICON_ON = btn.enabled;
+                    try {
+                        SpireConfig config = MakeConfig();
+                        assert config != null;
+                        config.setBool("EVOLVE_ICON_ON", EVOLVE_ICON_ON);
+                        config.save();
+                    } catch (Exception e) {
+                        Log("Failed to initialize PE panel");
+                        e.printStackTrace();
+                    }
+                });
         settings.addUIElement(ALLOW_BRANCHES_BTN);
+        settings.addUIElement(EVOLVE_ICON_BTN);
         BaseMod.registerModBadge(EvoImageMst.Badge, MODNAME, Arrays.toString(AUTHORS), DESCRIPTION, settings);
     }
 
