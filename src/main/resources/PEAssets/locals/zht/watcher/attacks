@@ -57,7 +57,7 @@
         </SData>
         <SData branch = "125">
             <name>毒龙鞭法</name>
-            <description>造成 !D! 点 伤害3次。 NL 若打出的上一张牌是攻击牌，施加 !M! 层 虚弱 和 脆弱 。</description>
+            <description>造成 !D! 点 伤害3次。 NL 若打出的上一张牌是攻击牌，施加 !M! 层 虚弱 和 易伤 。</description>
         </SData>
         <SData branch = "126">
             <name>云手</name>
