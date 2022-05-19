@@ -191,4 +191,7 @@ public final class BranchID {
     public static final int Reflects = 173;
     public static final int Overloads = 174;
     public static final int Overdrives = 175;
+    //5-19
+    public static final int LikeWater_Empty = 176;
+    public static final int LikeWater_Calm = 177;
 }
