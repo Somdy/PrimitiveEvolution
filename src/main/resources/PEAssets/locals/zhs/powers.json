@@ -167,4 +167,20 @@
             ""
         ]
     }
+    
+    "prevolution:LikeWaterEmpty": {
+        "NAME": "空我",
+        "DESCRIPTIONS": [
+            "在你的每回合结束时，如果你处于 #y愤怒 ，则对全体敌人造成 #b[amt_0] 点伤害。",
+            ""
+        ]
+    },
+
+    "prevolution:LikeWaterCalm": {
+        "NAME": "静心",
+        "DESCRIPTIONS": [
+            "在你的每回合结束时，如果你处于 #y愤怒 ,则进入 #y平静 。",
+            ""
+        ]
+    }
 }
