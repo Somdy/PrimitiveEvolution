@@ -2,6 +2,7 @@ package rs.primitiveevolution.powers;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -32,7 +33,14 @@ public class SketchingPower extends AbstractEvolutionPower{
             }));
         }
     }
-
+    
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        if (isPlayer && owner.isPlayer) {
+            addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+        }
+    }
+    
     @Override
     public String preSetDescription() {
         return DESCRIPTIONS[0];
