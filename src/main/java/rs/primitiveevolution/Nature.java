@@ -46,7 +46,7 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
     public Nature() {
         BaseMod.subscribe(this);
         ALLOW_BRANCHES = true;
-        EVOLVE_ICON_ON = true;
+        EVOLVE_ICON_ON = false;
         SpireConfig config = MakeConfig();
         LoadConfig(config);
     }
@@ -54,7 +54,7 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
     public static SpireConfig MakeConfig() {
         Properties defaults = new Properties();
         defaults.setProperty("ALLOW_BRANCHES", Boolean.toString(true));
-        defaults.setProperty("EVOLVE_ICON_ON", Boolean.toString(true));
+        defaults.setProperty("EVOLVE_ICON_ON", Boolean.toString(false));
         try {
             SpireConfig config = new SpireConfig("PrimitiveEvolution", "PEConfig", defaults);
             return config;
@@ -120,7 +120,7 @@ public class Nature implements LMGameGeneralUtils, PostInitializeSubscriber, Edi
                     }
                 });
         settings.addUIElement(ALLOW_BRANCHES_BTN);
-        settings.addUIElement(EVOLVE_ICON_BTN);
+//        settings.addUIElement(EVOLVE_ICON_BTN);
         BaseMod.registerModBadge(EvoImageMst.Badge, MODNAME, Arrays.toString(AUTHORS), DESCRIPTION, settings);
     }
 

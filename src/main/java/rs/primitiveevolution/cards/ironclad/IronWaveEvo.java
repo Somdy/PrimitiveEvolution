@@ -124,7 +124,7 @@ public class IronWaveEvo extends Evolution {
         }
     }
 
-    @SpirePatch(clz = Bash.class, method = SpirePatch.CONSTRUCTOR)
+    @SpirePatch(clz = IronWave.class, method = SpirePatch.CONSTRUCTOR)
     public static class CalculateCardDamage {
         @SpireRawPatch
         public static void Raw(CtBehavior ctMethodToPatch) throws Exception {
@@ -140,7 +140,7 @@ public class IronWaveEvo extends Evolution {
         }
     }
 
-    public static boolean moreDamage(Bash card, AbstractMonster mo) {
+    public static boolean moreDamage(AbstractCard card, AbstractMonster mo) {
         if (card instanceof EvolvableCard && card.upgraded && ((EvolvableCard) card).evolanch() == IronSmite) {
             return mo.currentBlock > 0;
         }

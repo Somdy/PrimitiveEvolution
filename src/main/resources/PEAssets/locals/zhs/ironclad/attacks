@@ -111,5 +111,14 @@
             <name>刀剑弹射</name>
             <description>对随机敌人造成 !D! 点伤害 !M! 次。 NL 每次给予目标4层 prevolution:瘀伤 。</description>
         </SData>
+<!--        <6-21>-->
+        <SData branch = "178">
+            <name>剑柄连击</name>
+            <description>造成 !D! 点伤害。 NL 抽 !M! 张牌。 NL 如果抽到的是攻击牌，则再抽1张牌。</description>
+        </SData>
+        <SData branch = "179">
+            <name>剑柄反击</name>
+            <description>造成 !D! 点伤害。 NL 抽 !M! 张牌。 NL 如果敌人的意图为攻击，额外抽2张牌。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

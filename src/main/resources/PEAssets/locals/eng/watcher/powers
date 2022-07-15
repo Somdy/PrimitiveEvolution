@@ -21,5 +21,17 @@
             <name>Hindsight</name>
             <description>Scry !M! at the end of your turn.</description>
         </SData>
+        <SData branch = "176">
+<!--            <name>空我</name>-->
+<!--            <description>在你的每回合结束时，如果你处于 愤怒 ，则对全体敌人造成 !M! 点 伤害。</description>-->
+            <name>Empty Out</name>
+            <description>Deal !M! damage to ALL enemies if in Wrath at the end of your turn.</description>
+        </SData>
+        <SData branch = "177">
+<!--            <name>静心</name>-->
+<!--            <description>在你的每回合结束时，如果你处于 愤怒 ，则进入 平静 。</description>-->
+            <name>Ataraxia</name>
+            <description>Enter Calm if in Wrath at the end of your turn.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

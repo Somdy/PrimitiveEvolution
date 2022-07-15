@@ -101,5 +101,21 @@
             "Whenever you change #yStances , draw #b[amt_0] card(s).",
             ""
         ]
+    },
+
+    "prevolution:LikeWaterEmpty": {
+        "NAME": "Empty Mine",
+        "DESCRIPTIONS": [
+            "Deal #b[amt_0] damage to ALL enemies if in #yWrawth at the end of your turn.",
+            ""
+        ]
+    },
+
+    "prevolution:LikeWaterCalm": {
+        "NAME": "Ataraxia",
+        "DESCRIPTIONS": [
+            "Enter #yCalm if in #yWrath at the end of your turn.",
+            ""
+        ]
     }
 }

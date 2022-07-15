@@ -13,5 +13,13 @@
             <name>事后诸葛</name>
             <description>在你的每回合结束时， 预见 !M! 。</description>
         </SData>
+        <SData branch = "176">
+            <name>空我</name>
+            <description>在你的每回合结束时，如果你处于 愤怒 ，则对全体敌人造成 !M! 点 伤害。</description>
+        </SData>
+        <SData branch = "177">
+            <name>静心</name>
+            <description>在你的每回合结束时，如果你处于 愤怒 ，则进入 平静 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

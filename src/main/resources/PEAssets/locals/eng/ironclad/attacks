@@ -111,5 +111,17 @@
             <name>Sharp Sword</name>
             <description>Deal !D! damage to a random enemy !M! times. NL Apply 4 prevolution:Bruise to the target each time.</description>
         </SData>
+        <SData branch = "178">
+<!--            <name>剑柄连击</name>-->
+<!--            <description>造成 !D! 点伤害。 NL 抽 !M! 张牌。 NL 如果抽到的是攻击牌，则再抽1张牌。</description>-->
+            <name>Pommel Combo</name>
+            <description>Deal !D! damage. NL Draw !M! card. NL If an Attack was drawn, draw one another card.</description>
+        </SData>
+        <SData branch = "179">
+<!--            <name>剑柄反击</name>-->
+<!--            <description>造成 !D! 点伤害。 NL 抽 !M! 张牌。 NL 如果敌人的意图为攻击，额外抽2张牌。</description>-->
+            <name>Pommel Counter</name>
+            <description>Deal !D! damage. NL Draw !M! card. NL If the enemy intends to attack, draw 2 another cards.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

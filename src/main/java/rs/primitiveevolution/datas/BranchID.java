@@ -194,4 +194,7 @@ public final class BranchID {
     //5-19
     public static final int LikeWater_Empty = 176;
     public static final int LikeWater_Calm = 177;
+    //6-21
+    public static final int PommelCombo = 178;
+    public static final int PommelCounter = 179;
 }
