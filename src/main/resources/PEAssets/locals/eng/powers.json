@@ -117,5 +117,13 @@
             "Enter #yCalm if in #yWrath at the end of your turn.",
             ""
         ]
+    },
+
+    "prevolution:BreakoutExhaustion": {
+        "NAME": "Exhaustion",
+        "DESCRIPTIONS": [
+            "After you played an Attack, lose #b1 #yStrength if you have any.",
+            ""
+        ]
     }
 }

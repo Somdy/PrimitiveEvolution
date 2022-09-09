@@ -197,4 +197,6 @@ public final class BranchID {
     //6-21
     public static final int PommelCombo = 178;
     public static final int PommelCounter = 179;
+    //22-9-9
+    public static final int Breakout = 180;
 }

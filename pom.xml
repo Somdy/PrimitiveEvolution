@@ -15,8 +15,6 @@
         <SlayTheSpire.version>03-05-2020</SlayTheSpire.version>
         <ModTheSpire.version>3.16.0</ModTheSpire.version>
         <basemod.version>5.22.0</basemod.version>
-        <StSLib.version>1.19.3</StSLib.version>
-        <ActLikeIt.version>0.1.2</ActLikeIt.version>
         <LMK.version>1.0.19</LMK.version>
         <LocalLib.path>D:\oData\Slay The Spire Project\MyMods\lib</LocalLib.path>
         <Steam.path>D:\oData\Programme Files\Steam\steamapps</Steam.path>
@@ -44,13 +42,6 @@
             <version>${basemod.version}</version>
             <scope>system</scope>
             <systemPath>${Steam.path}/workshop/content/646570/1605833019/BaseMod.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>actlikeit</groupId>
-            <artifactId>actlikeit</artifactId>
-            <version>${ActLikeIt.version}</version>
-            <scope>system</scope>
-            <systemPath>${Steam.path}/workshop/content/646570/1934902042/actlikeit.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>rs.lazymankits</groupId>

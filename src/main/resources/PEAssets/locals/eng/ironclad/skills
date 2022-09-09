@@ -46,5 +46,10 @@
             <name>Multi-Defend</name>
             <description>Gain !B! Block !M! times.</description>
         </SData>
+        <SData branch = "180">
+            <name>Breakout</name>
+<!--            <description>获得 !M! 点 力量 。 NL 你在打出1张攻击牌后，失去1点 力量 ，除非已没有 力量 。</description>-->
+            <description>Gain !M! Strength. NL After you play an Attack, lose 1 Strength if you have any.</description>
+        </SData>
     </BaseTextData>
 </LocalSets>

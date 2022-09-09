@@ -182,5 +182,13 @@
             "在你的每回合结束时，如果你处于 #y愤怒 ,则进入 #y平静 。",
             ""
         ]
+    },
+
+    "prevolution:BreakoutExhaustion": {
+        "NAME": "力竭",
+        "DESCRIPTIONS": [
+            "你在打出 #b1 张攻击牌后，若有 #y力量 ，则失去 #b1 点 #y力量 。",
+            ""
+        ]
     }
 }

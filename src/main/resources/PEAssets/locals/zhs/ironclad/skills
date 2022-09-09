@@ -46,5 +46,10 @@
             <name>防不胜防</name>
             <description>获得 !B! 点 格挡 !M! 次。</description>
         </SData>
+        <!--22/9/9!-->
+        <SData branch = "180">
+            <name>爆发</name>
+            <description>获得 !M! 点 力量 。 NL 你在打出1张攻击牌后 NL 失去1点 力量 ，除非已没有 力量 。</description>
+        </SData>
     </BaseTextData>
 </LocalSets>
